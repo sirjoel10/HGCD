@@ -14,11 +14,11 @@ vibrator::vibrator(int pin)
 }
 //TODO verify code 
 
-
 void vibrator::set_speed(int speed){
   _speed = speed;
   analogWrite(_pin, _speed);
 }
+
 
 int vibrator::get_speed(){
   return _speed;

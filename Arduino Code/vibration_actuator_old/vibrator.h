@@ -6,6 +6,8 @@
 #ifndef vibrator_h
 #define vibrator_h
 
+#endif
+
 //TODO verify code 
 
 #include "Arduino.h"
@@ -14,11 +16,12 @@ class vibrator
 {
   public:
     vibrator(int pin);
-    void set_val();
-    void getVal();
+    void set_speed(int speed);
+    int get_speed();
+    
   private:
     int _pin;
-   int speed
+    int _speed;
 };
 
-#endif
+
