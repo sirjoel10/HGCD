@@ -15,6 +15,9 @@ void setup(){
 }
 
 void loop(){
+
+  
+  /*
   int sensorValue = analogRead(flexSensorPin); 
   //deg = map(sensorValue, sensorMin, sensorMax, 0, 100);
   //Serial.print("deg: ");
@@ -22,9 +25,10 @@ void loop(){
   Serial.print("Sensor val: ");
   Serial.println(sensorValue);
   delay(250);
+  */
 }
 
-
+/*
 void callib(){
  // calibrate during the first five seconds 
  Serial.println("Callibration Start");
@@ -52,4 +56,4 @@ void callib(){
  Serial.println("Callibration Finished");
 }
 
-
+*/
