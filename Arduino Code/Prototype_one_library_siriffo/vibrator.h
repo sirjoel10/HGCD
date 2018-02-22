@@ -6,7 +6,7 @@
 #ifndef Vibrator_h
 #define Vibrator_h
 
-#endif
+
 
 //TODO verify code 
 
@@ -16,12 +16,13 @@ class Vibrator
 {
   public:
     vibrator(int pin);
-    void setSpeed(int speed);
-    int getSpeed();
-    
+    void set_speed(int speed);
+    int get_speed();
+    int setScaledSpeed(int input);
+    void setMaxMinVal(int maxVal, int minVal);
   private:
     int _pin;
     int _speed;
 };
 
-
+#endif

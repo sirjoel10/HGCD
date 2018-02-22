@@ -7,7 +7,7 @@
 
 
 #include "Arduino.h"
-#include "Hallsensor.h"
+#include "hallsensor.h"
 
 Hallsensor::hallsensor(int pin)
 {

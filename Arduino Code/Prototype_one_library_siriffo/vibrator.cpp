@@ -5,7 +5,10 @@
 */
 
 #include "Arduino.h"
-#include "Vibrator.h"
+#include "vibrator.h"
+
+int _max;
+int _min;
 
 Vibrator::vibrator(int pin)
 {
@@ -19,8 +22,19 @@ void Vibrator::setSpeed(int speed){
   analogWrite(_pin, _speed);
 }
 
+void Vibrator::setMaxMinVal(int maxVal, int minVal){
+  _max = maxVal;
+  _min = minVal;
+}
+//scales value to range 0-255
+int Vibrator::setScaledSpeed(int input){
+  
 
-int Vibrator::getSpeed(){
+  return (1-((input-_min)/(_max-_min)))*(250-0)+0;
+}
+
+
+int Vibrator::get_speed(){
   return _speed;
 }
 

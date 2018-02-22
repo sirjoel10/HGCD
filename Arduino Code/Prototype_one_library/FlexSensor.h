@@ -3,17 +3,17 @@
   Created by Siriffo Sonko and Joel Sirefelt 17 Feb, 2018.
   Released into the public domain.
 */
-#ifndef flex_sensor_h
-#define flex_sensor_h
+#ifndef FlexSensor_h
+#define FlexSensor_h
 
 //TODO verify code 
 
 #include "Arduino.h"
 
-class flex_sensor
+class FlexSensor
 {
   public:
-    flex_sensor(int pin);
+    flexSensor(int pin);
     void calib();
     int getVal();
   private:

@@ -5,9 +5,9 @@
 */
 
 #include "Arduino.h"
-#include "flex_sensor.h"
+#include "FlexSensor.h"
 
-flex_sensor::flex_sensor(int pin)
+FlexSensor::flexSensor(int pin)
 {
   pinMode(pin, INPUT);
   _pin = pin;
@@ -15,7 +15,7 @@ flex_sensor::flex_sensor(int pin)
 //TODO verify code 
 
 
-void flex_sensor::calib(){
+void flexSensor::calib(){
  // calibrate during the first five seconds 
   Serial.println("Callibration Start");
   bool nextop = false;
@@ -46,7 +46,7 @@ Serial.println("Callibration Finished");
 
 
 
-int flex_sensor::getVal(){
+int flexSensor::getVal(){
   return analogRead(_pin);
 }
 
