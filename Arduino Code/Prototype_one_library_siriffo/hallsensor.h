@@ -12,7 +12,7 @@
 class Hallsensor
 {
   public:
-    hallsensor(int pin);
+    Hallsensor(int pin);
     void setDigitalValue(int val);
     int digitalVal(); // returns 0 if outside of digital value 1 if inside of digital value
     int analogVal();

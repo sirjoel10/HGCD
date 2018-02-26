@@ -15,9 +15,9 @@
 class Vibrator
 {
   public:
-    vibrator(int pin);
-    void set_speed(int speed);
-    int get_speed();
+    Vibrator(int pin);
+    void setSpeed(int speed);
+    int getSpeed();
     int setScaledSpeed(int input);
     void setMaxMinVal(int maxVal, int minVal);
   private:

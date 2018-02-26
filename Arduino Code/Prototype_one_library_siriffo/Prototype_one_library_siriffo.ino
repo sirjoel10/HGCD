@@ -43,18 +43,18 @@
 #include <LiquidCrystal.h>
 
 
-#ifndef flex_sensor.h
-#include "flex_sensor.h"
+#ifndef FlexSensor.h
+#include "flexSensor.h"
 #endif
 
 
 
-#ifndef hallsensor.h
-#include "hallsensor.h"
+#ifndef Hallsensor.h
+#include "Hallsensor.h"
 #endif
 
-#ifndef vibrator.h
-#include "vibrator.h" 
+#ifndef Vibrator.h
+#include "Vibrator.h" 
 #endif
 
 // initialize the library by associating any needed LCD interface pin
@@ -75,7 +75,7 @@ void setup() {
   // set up the LCD's number of columns and rows:
   //lcd.begin(16, 2);
   Serial.begin(9600);
-  vib.set_speed(0);
+  vib.setSpeed(0);
   flex.calib();
   vib.setMaxMinVal(flex.getMax(), flex.getMin());
 
@@ -101,7 +101,7 @@ Serial.println(100*(flex.getVal()-flex.getMin()));
 */
 //Serial.println("scaled = ");
 //Serial.println(100*((flex.getVal()-flex.getMin()))/(flex.getMax()-flex.getMin()));
-vib.set_speed(100-(100*((flex.getVal()-flex.getMin()))/(flex.getMax()-flex.getMin())));
+vib.setSpeed(100-(100*((flex.getVal()-flex.getMin()))/(flex.getMax()-flex.getMin())));
 
 
 

@@ -7,9 +7,9 @@
 
 
 #include "Arduino.h"
-#include "hallsensor.h"
+#include "Hallsensor.h"
 
-Hallsensor::hallsensor(int pin)
+Hallsensor::Hallsensor(int pin)
 {
   pinMode(pin, INPUT);
   _pin = pin;

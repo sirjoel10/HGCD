@@ -10,7 +10,7 @@
 int _max;
 int _min;
 
-Vibrator::vibrator(int pin)
+ Vibrator::Vibrator(int pin)
 {
   pinMode(pin, OUTPUT);
   _pin = pin;
@@ -34,7 +34,7 @@ int Vibrator::setScaledSpeed(int input){
 }
 
 
-int Vibrator::get_speed(){
+int Vibrator::getSpeed(){
   return _speed;
 }
 
