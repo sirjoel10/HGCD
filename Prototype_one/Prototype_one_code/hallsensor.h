@@ -4,17 +4,24 @@
   Released into the public domain.
 */
 
+/*
+  Designed for a delay of 250ms
+  OutputTap
+  0: no tap
+  1: hold tap 
+  2: single tap 
+  3: double tap
+*/
+
 #ifndef Hallsensor_h
 #define Hallsensor_h
-
 #include "Arduino.h"
+
 
 class Hallsensor
 {
   public:
     Hallsensor(int pin);
-    void setDigitalValue(int val);
-    int digitalVal(); // returns 0 if outside of digital value 1 if inside of digital value
     int analogVal();
   private:
     int _pin;
