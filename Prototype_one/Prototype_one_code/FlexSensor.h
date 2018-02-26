@@ -6,22 +6,24 @@
 #ifndef FlexSensor_h
 #define FlexSensor_h
 
-//TODO verify code 
 
 #include "Arduino.h"
 
 class FlexSensor
 {
   public:
-    flexSensor(int pin);
-    void calib();
+    FlexSensor(int pin);
+    void stretch();
+    void clench();
     int getVal();
+    int getMax();
+    int getMin();
   private:
     int _pin;
-    int sensorValue = 0;         // the sensor value
-    int sensorMin = 1023;        // minimum sensor value
-    int sensorMax = 0;
-    int sensorStart = 0;
+    int _sensorValue = 0;         // the sensor value
+    int _sensorMin = 1000;        // minimum sensor value
+    int _sensorMax = 0;
+    int _sensorStart = 0;
 };
 
 #endif
