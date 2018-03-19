@@ -1,5 +1,6 @@
 #include <LiquidCrystal.h>
 #include "PWMServo.h"
+#include <Servo.h>
 
 //#ifndef FlexSensor.h
 #include "flexSensor.h"
@@ -26,8 +27,6 @@ bool deviceOn=false;
 FlexSensor flex(A2);
 Hallsensor hall1(A0);
 Hallsensor hall2(A1);
-Vibrator vib(10);
-PWMServo servo;
 
 
 //Variables for Hallsensor tap 
@@ -59,13 +58,17 @@ int speed = 0;
 int pwmOut = 0;
 bool callibrated = false;
 
+Servo myservo;
+
 void setup() {
   Serial.begin(9600);
-  servo.attach(SERVO_PIN_A);
+  myservo.attach(9);
+  pinMode(11, OUTPUT);
 }
 
  
 void loop() {
+  Serial.println(pwmOut);
   updateTap(hall2);
   if(tapOutput == 3 ){
     //Serial.println("You tapped twice on hall2");
@@ -227,7 +230,7 @@ void closeDisplay(){
   bool gasMode = false;
   bool displayChangedState=false;
   bool deviceOn=false;
-  vib.setSpeed(0);
+  analogWrite(11,0);
 }
 
 
@@ -244,7 +247,7 @@ void gasUpdate(){
       lcd.setCursor(9, 1);
       lcd.print("OFF ");
       gasMode = false;
-      vib.setSpeed(0);
+      analogWrite(11,0);
     }
     else{
       if(callibrated == false){
@@ -267,7 +270,7 @@ void gasUpdate(){
 void callibFlex(){
   callibrated = true;
   if(displayMode==1){
-    vib.setSpeed(0);
+    analogWrite(11,0);
     lcd.clear();
     swipe("Calib started");
     delay(2000);
@@ -290,10 +293,11 @@ void sendPWM(){
   speed=(100-(100*((flex.getVal()-flex.getMin()))/(flex.getMax()-flex.getMin())));
   pwmOut=map(speed, 0, 100, 0, 179);
   if(speed > 5){
-    vib.setSpeed(speed);
+    analogWrite(11, speed);
   }
+  pwmOut=map(speed, 0, 100, 0, 179);
   if(pwmOut>10){
-  servo.write(pwmOut);
+  myservo.write(pwmOut);
   }
 }
 
