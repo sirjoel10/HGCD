@@ -1,0 +1,37 @@
+14:29:28 **** Incremental Build of configuration Debug for project uart2 ****
+make all 
+Building file: C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\phiwersports\Desktop\Projects\Generated code\uart2\uart2\SW4STM32\uart2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Inc" -I"C:/Users/phiwersports/Documents/exjobb/TM_STM32_lib" -I"C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/CMSIS/Include"  -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" -o "Application/User/main.o" "C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Src/main.c"
+C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Src/main.c: In function 'main':
+C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Src/main.c:128:17: warning: passing argument 1 of 'ITM_SendChar' makes integer from pointer without a cast [-Wint-conversion]
+    ITM_SendChar("s");
+                 ^~~
+In file included from C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h:182:0,
+                 from C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4xx.h:157,
+                 from C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_def.h:46,
+                 from C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_rcc.h:45,
+                 from C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Inc/stm32l4xx_hal_conf.h:222,
+                 from C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:46,
+                 from C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Src/main.c:40:
+C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Drivers/CMSIS/Include/core_cm4.h:1872:26: note: expected 'uint32_t {aka long unsigned int}' but argument is of type 'char *'
+ __STATIC_INLINE uint32_t ITM_SendChar (uint32_t ch)
+                          ^~~~~~~~~~~~
+Finished building: C:/Users/phiwersports/Desktop/Projects/Generated code/uart2/uart2/Src/main.c
+ 
+Building target: uart2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "uart2.elf" @"objects.list"   -lm
+Finished building target: uart2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "uart2.elf" "uart2.bin"
+arm-none-eabi-size "uart2.elf"
+   text	   data	    bss	    dec	    hex	filename
+  14944	     24	   1704	  16672	   4120	uart2.elf
+ 
+
+14:29:30 Build Finished (took 1s.581ms)
+

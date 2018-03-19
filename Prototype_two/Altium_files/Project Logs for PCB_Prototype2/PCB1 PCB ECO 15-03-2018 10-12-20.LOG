@@ -1,0 +1,28 @@
+Added Component: Designator=U1(LQFP64-10x10mm)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2016 Accelerated Designs. All rights reserved"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "stm32l476rx"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "Value"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "ST Microelectronics"; VariantName = "[No Variations]"
+Added Component: Designator=ZB1(Digi_zigbee)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "RefMan"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://media.digikey.com/pdf/Data%20Sheets/Digi%20International%20PDFs/XBee3_RF_Module_HRM_10-6-17.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "uSERmANUAL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.digi.com/resources/documentation/digidocs/90001539/#containers/cont_operation.htm%3FTocPath%3DOperation%7C_____0"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetZB1_1 Pin=ZB1-1
+Added Pin To Net: NetName=NetZB1_1 Pin=ZB1-10
+Added Pin To Net: NetName=NetZB1_1 Pin=ZB1-12
+Added Pin To Net: NetName=NetZB1_1 Pin=ZB1-21
+Added Pin To Net: NetName=NetZB1_1 Pin=ZB1-32
+Added Pin To Net: NetName=NetZB1_1 Pin=ZB1-34
+Added Net: Name=NetZB1_1
+Added Pin To Net: NetName=NetZB1_17 Pin=ZB1-17
+Added Pin To Net: NetName=NetZB1_17 Pin=ZB1-18
+Added Pin To Net: NetName=NetZB1_17 Pin=ZB1-19
+Added Pin To Net: NetName=NetZB1_17 Pin=ZB1-20
+Added Pin To Net: NetName=NetZB1_17 Pin=ZB1-22
+Added Net: Name=NetZB1_17
+Added Class: Name=HGCD

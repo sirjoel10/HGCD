@@ -1,0 +1,25 @@
+#include "string.h"
+#include "UART_Handler.h"
+#include "main.h"
+#include "stm32l4xx_hal.h"
+
+extern g Globals;
+
+
+void uartCommsHandler(void)
+{
+	if(Globals.msTimer)
+	{
+		return;
+	}
+	else
+	{
+		clearString(txBuffer);
+		HAL_NVIC_DisableIRQ(USART2_IRQn);
+		copyString(Buffer3, txBuffer);
+		HAL_NVIC_EnableIRQ(USART2_IRQn);
+		HAL_UART_Transmit_IT(&huart2, txBuffer, 7);
+		loadMsTimer(10000);
+
+	}
+}

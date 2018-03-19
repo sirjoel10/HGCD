@@ -1,0 +1,33 @@
+#include "String.h"
+
+//global functions
+
+void clearString(uint8_t *pBuff)
+{
+	while(*pBuff != '\0')
+	{
+		*pBuff++ = 0;
+	}
+}
+
+void copyString(uint8_t *pBuffO, uint8_t *pBuffC)
+{
+   /* static int i;
+    for(i = 0; ; i++)
+    {
+        if(pBuffO[i] == '\0')
+        {
+            i = 0;
+            break;
+        }
+        else
+        {
+            pBuffC[i] = pBuffO[i];
+        }
+    }*/
+
+	while(*pBuffO != '\0')
+	{
+		*pBuffC++ = *pBuffO++;
+	}
+}

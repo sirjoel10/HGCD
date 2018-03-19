@@ -1,0 +1,20 @@
+16:16:44 **** Incremental Build of configuration Debug for project Talkie2 ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Simon Lindell\Desktop\Development\NEW\STM_CUBE_GENERATIONS\Talkie2\Talkie2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Simon Lindell/Desktop/Development/NEW/STM_CUBE_GENERATIONS/Talkie2/Talkie2/Inc" -I"C:/Users/Simon Lindell/Desktop/Development/NEW/STM_CUBE_GENERATIONS/Talkie2/Talkie2/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Simon Lindell/Desktop/Development/NEW/STM_CUBE_GENERATIONS/Talkie2/Talkie2/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Simon Lindell/Desktop/Development/NEW/STM_CUBE_GENERATIONS/Talkie2/Talkie2/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Simon Lindell/Desktop/Development/NEW/STM_CUBE_GENERATIONS/Talkie2/Talkie2/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building target: Talkie2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Talkie2.elf" @"objects.list"   -lm
+Finished building target: Talkie2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Talkie2.elf" "Talkie2.bin"
+arm-none-eabi-size "Talkie2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5736	     24	   1640	   7400	   1ce8	Talkie2.elf
+ 

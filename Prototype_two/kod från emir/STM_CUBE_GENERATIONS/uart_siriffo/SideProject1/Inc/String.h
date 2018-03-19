@@ -1,0 +1,14 @@
+#ifndef __STRING_H__
+#define __STRING_H__
+
+#define MAX_STRING_LENGHT 100
+
+#include "stdbool.h"
+#include "stdint.h"
+
+void clearString(uint8_t *pBuff);
+void copyString(uint8_t *pBuffO, uint8_t *pBuffC);
+void copyString2(const uint8_t *pBuffO, uint8_t *pBuffC);
+bool compareString(uint8_t *pBuff1, const uint8_t *pBuff2);
+
+#endif

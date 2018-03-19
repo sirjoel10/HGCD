@@ -1,0 +1,24 @@
+#include "String.h"
+
+//global functions
+
+void clearString(uint8_t *pBuff)
+{
+    /*static int i;
+    for(i = 0; i < MAX_STRING_LENGHT ; i++)
+    {
+        if(pBuff[i] == '\0')
+        {
+            i = 0;
+            break;
+        }
+        else
+        {
+            pBuff[i] = 0;
+        }
+    }*/
+	while(*pBuff != '\0')
+	{
+		*pBuff++ = 0;
+	}
+}

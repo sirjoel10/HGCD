@@ -1,0 +1,6 @@
+23:45:57 **** Incremental Build of configuration Debug for project TimerDemo ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+
+23:45:57 Build Finished (took 491ms)
+
