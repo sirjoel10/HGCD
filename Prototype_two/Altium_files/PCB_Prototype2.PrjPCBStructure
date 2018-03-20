@@ -1,1 +1,2 @@
 Record=TopLevelDocument|FileName=HGCD.SchDoc
+Record=SheetSymbol|SourceDocument=HGCD.SchDoc|Designator=ConnectorOut|SchDesignator=ConnectorOut|FileName=connectorOut.SchDoc|SymbolType=Normal|RawFileName=connectorOut.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
