@@ -1,6 +1,6 @@
 [Design]
 Version=1.0
-HierarchyMode=0
+HierarchyMode=3
 ChannelRoomNamingStyle=0
 ReleasesFolder=
 ChannelDesignatorFormatString=$Component_$RoomName
@@ -242,40 +242,6 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document13]
-DocumentPath=connectorOut.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=XOAYUJGJ
-
-[Document14]
-DocumentPath=drive-download-20180321T143856Z-001\Wirelesscharging.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=EHKXXFAG
-
-[Document15]
 DocumentPath=ZigBee.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -292,7 +258,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YBENCNUI
 
-[Document16]
+[Document14]
 DocumentPath=STM32.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -309,7 +275,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DAOYXUUP
 
-[Document17]
+[Document15]
 DocumentPath=Magnetometer.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -326,7 +292,24 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RTVDFHTN
 
-[Document18]
+[Document16]
+DocumentPath=WCcircuit.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=9
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SFXYUILQ
+
+[Document17]
 DocumentPath=TPS6120x.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -343,24 +326,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VGEABQAT
 
-[Document19]
-DocumentPath=circuit.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=PQQCFAAO
-
-[Document20]
+[Document18]
 DocumentPath=drive-download-20180321T143856Z-001\ExtraComp.LibPkg
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -377,8 +343,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
-DocumentPath=6 pin connector.SchDoc
+[Document19]
+DocumentPath=connectors.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=8
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=OOFOJPOB
+
+[Document20]
+DocumentPath=TFT LCD ER-TFT018-2.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -392,7 +375,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=VKCYSONW
+DocumentUniqueId=SQGCLIOJ
 
 [Configuration1]
 Name=Sources
@@ -1357,6 +1340,13 @@ UpdateCurrentModels=1
 SelectedOnly=0
 UpdateVariants=1
 PartTypes=0
+
+[NetInfos]
+Net1=NetName=Net*_1|NetColor=$006EFF6E
+Net2=NetName=Net*4_1|NetColor=$006EFF6E
+Net3=NetName=NetC17_1|NetColor=$006EFF6E
+Net4=NetName=button+|NetColor=$006EFF6E
+Net5=NetName=reed+|NetColor=$006EFF6E
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|Confirm=-1|UseName=-1|InclAllRules=0
