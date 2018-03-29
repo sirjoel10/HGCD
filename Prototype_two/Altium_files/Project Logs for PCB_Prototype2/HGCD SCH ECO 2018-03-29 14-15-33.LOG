@@ -1,0 +1,17 @@
+Remove Pin=LCD-9 From Net=CS LCD
+Remove Pin=LCD-10 From Net=SCK LCD
+Remove Pin=LCD-15 From Net=RESET LCD
+Remove Pin=R3-2 From Net=T_JTCK
+Remove Pin=R4-2 From Net=T_JTMS
+Remove Pin=R5-2 From Net=T_NRST
+Remove Pin=R6-2 From Net=T_SWO
+Remove Pin=R23-1 From Net=MOSI LCD
+Remove Pin=U1A-7 From Net=T_NRST
+Remove Pin=U1A-20 From Net=CS LCD
+Remove Pin=U1A-21 From Net=SCK LCD
+Remove Pin=U1A-22 From Net=MISO LCD
+Remove Pin=U1A-23 From Net=MOSI LCD
+Remove Pin=U1A-41 From Net=RESET LCD
+Remove Pin=U1A-46 From Net=T_JTMS
+Remove Pin=U1A-49 From Net=T_JTCK
+Remove Pin=U1A-55 From Net=T_SWO
