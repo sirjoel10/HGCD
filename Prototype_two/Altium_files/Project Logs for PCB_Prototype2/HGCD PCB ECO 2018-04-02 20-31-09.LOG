@@ -1,0 +1,53 @@
+Removed Pin From Net: NetName=NetC1_2 Pin=X1-1
+Removed Pin From Net: NetName=NetC2_2 Pin=X1-4
+Change Component Comment : Designator=X1 Old Comment=ABS25-32.768KHZ-6-T New Comment=ABS25-32-768KHZ-T
+Change component parameters: Designator = "X1"; Footprint = "XTAL_ABS25-32-768KHZ-T"; UniqueID = "\HXYKCIHI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Abracon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "ABS25-32-768KHZ-T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/symbols-footprints/ABS25-32-768KHZ-T/Abracon/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC22_1 Pin=Connector1-1
+Added Pin To Net: NetName=NetC13_1 Pin=Connector1-2
+Added Pin To Net: NetName=NetC13_1 Pin=Connector1-2
+Added Pin To Net: NetName=GND Pin=LCD-5
+Added Pin To Net: NetName=NetLCD_6 Pin=LCD-6
+Added Pin To Net: NetName=NetLCD_6 Pin=LCD-7
+Added Pin To Net: NetName=CS LCD Pin=LCD-9
+Added Pin To Net: NetName=SCK LCD Pin=LCD-10
+Added Pin To Net: NetName=GND Pin=LCD-11
+Added Pin To Net: NetName=GND Pin=LCD-12
+Added Pin To Net: NetName=GND Pin=LCD-13
+Added Pin To Net: NetName=GND Pin=LCD-14
+Added Pin To Net: NetName=RESET LCD Pin=LCD-15
+Added Pin To Net: NetName=GND Pin=LCD-16
+Added Pin To Net: NetName=MISO LCD Pin=LCD-17
+Added Pin To Net: NetName=GND Pin=LCD-18
+Added Pin To Net: NetName=GND Pin=LCD-19
+Added Pin To Net: NetName=GND Pin=LCD-20
+Added Pin To Net: NetName=GND Pin=LCD-21
+Added Pin To Net: NetName=GND Pin=LCD-22
+Added Pin To Net: NetName=GND Pin=LCD-23
+Added Pin To Net: NetName=GND Pin=LCD-24
+Added Pin To Net: NetName=GND Pin=LCD-25
+Added Pin To Net: NetName=GND Pin=LCD-26
+Added Pin To Net: NetName=GND Pin=LCD-27
+Added Pin To Net: NetName=GND Pin=LCD-28
+Added Pin To Net: NetName=GND Pin=LCD-29
+Added Pin To Net: NetName=GND Pin=LCD-30
+Added Pin To Net: NetName=GND Pin=LCD-31
+Added Pin To Net: NetName=GND Pin=LCD-32
+Added Pin To Net: NetName=GND Pin=LCD-33
+Added Pin To Net: NetName=GND Pin=LCD-34
+Added Pin To Net: NetName=VCC Pin=LCD-35
+Added Pin To Net: NetName=NetLCD_36 Pin=LCD-36
+Added Pin To Net: NetName=GND Pin=LCD-37
+Added Pin To Net: NetName=GND Pin=LCD-38
+Added Pin To Net: NetName=GND Pin=LCD-39
+Added Pin To Net: NetName=GND Pin=LCD-40
+Added Pin To Net: NetName=T_NRST Pin=U1-7
+Added Pin To Net: NetName=NetC2_2 Pin=X1-1
+Added Pin To Net: NetName=NetC1_2 Pin=X1-4

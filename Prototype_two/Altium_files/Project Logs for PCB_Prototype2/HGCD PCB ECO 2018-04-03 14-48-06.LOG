@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=GND Pin=C29-1
+Removed Pin From Net: NetName=VCC Pin=C29-2
+Removed Member From Class: ClassName=ZigBee Member=C29
+Added Component: Designator=Radio(RF2401F20)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=Radio-1
+Added Pin To Net: NetName=VCC Pin=Radio-1
+Added Pin To Net: NetName=GND Pin=Radio-2
+Added Pin To Net: NetName=WirComm CE Pin=Radio-3
+Added Pin To Net: NetName=WirComm CSN Pin=Radio-4
+Added Pin To Net: NetName=WirComm SCK Pin=Radio-5
+Added Pin To Net: NetName=WirComm MOSI Pin=Radio-6
+Added Pin To Net: NetName=WirComm MISO Pin=Radio-7
+Added Pin To Net: NetName=WirComm IRQ Pin=Radio-8
+Added Pin To Net: NetName=GND Pin=Radio-10
+Added Member To Class: ClassName=ZigBee Member=Component Radio RF2401F20

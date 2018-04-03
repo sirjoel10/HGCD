@@ -1,0 +1,98 @@
+Added Component: Designator=C27(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C28(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C29(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C30(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C32(1608[0603])
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C27-1
+Added Pin To Net: NetName=VCC Pin=C27-2
+Added Pin To Net: NetName=GND Pin=C28-1
+Added Pin To Net: NetName=VCC Pin=C28-2
+Added Pin To Net: NetName=GND Pin=C29-1
+Added Pin To Net: NetName=VCC Pin=C29-2
+Added Pin To Net: NetName=GND Pin=C30-1
+Added Pin To Net: NetName=VCC Pin=C30-2
+Added Pin To Net: NetName=GND Pin=C32-1
+Added Pin To Net: NetName=VCC Pin=C32-2
+Added Pin To Net: NetName=NetC22_1 Pin=Connector1-1
+Added Pin To Net: NetName=NetC13_1 Pin=Connector1-2
+Added Pin To Net: NetName=NetC13_1 Pin=Connector1-2
+Added Pin To Net: NetName=GND Pin=LCD-5
+Added Pin To Net: NetName=NetLCD_6 Pin=LCD-6
+Added Pin To Net: NetName=NetLCD_6 Pin=LCD-7
+Added Pin To Net: NetName=CS LCD Pin=LCD-9
+Added Pin To Net: NetName=SCK LCD Pin=LCD-10
+Added Pin To Net: NetName=GND Pin=LCD-11
+Added Pin To Net: NetName=GND Pin=LCD-12
+Added Pin To Net: NetName=GND Pin=LCD-13
+Added Pin To Net: NetName=GND Pin=LCD-14
+Added Pin To Net: NetName=RESET LCD Pin=LCD-15
+Added Pin To Net: NetName=GND Pin=LCD-16
+Added Pin To Net: NetName=MISO LCD Pin=LCD-17
+Added Pin To Net: NetName=GND Pin=LCD-18
+Added Pin To Net: NetName=GND Pin=LCD-19
+Added Pin To Net: NetName=GND Pin=LCD-20
+Added Pin To Net: NetName=GND Pin=LCD-21
+Added Pin To Net: NetName=GND Pin=LCD-22
+Added Pin To Net: NetName=GND Pin=LCD-23
+Added Pin To Net: NetName=GND Pin=LCD-24
+Added Pin To Net: NetName=GND Pin=LCD-25
+Added Pin To Net: NetName=GND Pin=LCD-26
+Added Pin To Net: NetName=GND Pin=LCD-27
+Added Pin To Net: NetName=GND Pin=LCD-28
+Added Pin To Net: NetName=GND Pin=LCD-29
+Added Pin To Net: NetName=GND Pin=LCD-30
+Added Pin To Net: NetName=GND Pin=LCD-31
+Added Pin To Net: NetName=GND Pin=LCD-32
+Added Pin To Net: NetName=GND Pin=LCD-33
+Added Pin To Net: NetName=GND Pin=LCD-34
+Added Pin To Net: NetName=VCC Pin=LCD-35
+Added Pin To Net: NetName=NetLCD_36 Pin=LCD-36
+Added Pin To Net: NetName=GND Pin=LCD-37
+Added Pin To Net: NetName=GND Pin=LCD-38
+Added Pin To Net: NetName=GND Pin=LCD-39
+Added Pin To Net: NetName=GND Pin=LCD-40
+Added Member To Class: ClassName=Magnetometer Member=Component C27 Cap Semi
+Added Member To Class: ClassName=STM32 Member=Component C28 Cap Semi
+Added Member To Class: ClassName=ZigBee Member=Component C29 Cap Semi
+Added Member To Class: ClassName=connectors Member=Component C30 Cap Semi
+Added Member To Class: ClassName=TFT LCD ER-TFT018-2 Member=Component C32 Cap Semi
