@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=Net*_1 Pin=*-1
+Removed Pin From Net: NetName=Net*_2 Pin=*-2
+Removed Pin From Net: NetName=Net2_10 Pin=P3-1
+Removed Pin From Net: NetName=GND Pin=P3-2
+Added Component: Designator=*(WirelessIn)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P3(JST_S2B-PH-K-S(LF)(SN))
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Good"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "JST"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "S2B-PH-K-S (LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "0.12 USD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/symbols-footprints/S2B-PH-K-S%20%28LF%29%28SN%29/JST/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*_1 Pin=*-1
+Added Pin To Net: NetName=Net*_2 Pin=*-2
+Added Pin To Net: NetName=Net2_10 Pin=P3-1
+Added Pin To Net: NetName=GND Pin=P3-2

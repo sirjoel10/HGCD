@@ -1,0 +1,77 @@
+Removed Pin From Net: NetName=GND Pin=U1-12
+Change Component Comment : Designator=X1 Old Comment=ABS25-32-768KHZ-T New Comment=ABS25-32.768KHZ-6-T
+Change Component Description : Designator=L1 Old Description=WE-TPC SMD Shielded Tiny Power Inductor, size 2828, 1.8A, 57mO, 2.2uH New Description=WE-TPC SMD Shielded Tiny Power Inductor, size 2828, 1.8A, 57mO, 2.2uH
+Change component parameters: Designator = "L1"; Footprint = "WE-TPC_2828"; UniqueID = "\XLSUPFCG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/pbs/datasheet/744025002.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance"; Value = "57mO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "744025002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published Date"; Value = "July 2017"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Current"; Value = "1.8A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "2828"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2uH"; VariantName = "[No Variations]"
+Change component parameters: Designator = "X1"; Footprint = "XTAL_4SM_8X3R8"; UniqueID = "\MBYBRNDQ"
+Change component parameters. Clean all parameters for all variants
+Added Pin To Net: NetName=NetC22_1 Pin=Connector1-1
+Added Pin To Net: NetName=NetC13_1 Pin=Connector1-2
+Added Pin To Net: NetName=NetC13_1 Pin=Connector1-2
+Added Pin To Net: NetName=GND Pin=LCD-5
+Added Pin To Net: NetName=NetLCD_6 Pin=LCD-6
+Added Pin To Net: NetName=NetLCD_6 Pin=LCD-7
+Added Pin To Net: NetName=GND Pin=LCD-11
+Added Pin To Net: NetName=GND Pin=LCD-12
+Added Pin To Net: NetName=GND Pin=LCD-13
+Added Pin To Net: NetName=GND Pin=LCD-14
+Added Pin To Net: NetName=GND Pin=LCD-16
+Added Pin To Net: NetName=MISO LCD Pin=LCD-17
+Added Pin To Net: NetName=GND Pin=LCD-18
+Added Pin To Net: NetName=GND Pin=LCD-19
+Added Pin To Net: NetName=GND Pin=LCD-20
+Added Pin To Net: NetName=GND Pin=LCD-21
+Added Pin To Net: NetName=GND Pin=LCD-22
+Added Pin To Net: NetName=GND Pin=LCD-23
+Added Pin To Net: NetName=GND Pin=LCD-24
+Added Pin To Net: NetName=GND Pin=LCD-25
+Added Pin To Net: NetName=GND Pin=LCD-26
+Added Pin To Net: NetName=GND Pin=LCD-27
+Added Pin To Net: NetName=GND Pin=LCD-28
+Added Pin To Net: NetName=GND Pin=LCD-29
+Added Pin To Net: NetName=GND Pin=LCD-30
+Added Pin To Net: NetName=GND Pin=LCD-31
+Added Pin To Net: NetName=GND Pin=LCD-32
+Added Pin To Net: NetName=GND Pin=LCD-33
+Added Pin To Net: NetName=GND Pin=LCD-34
+Added Pin To Net: NetName=VCC Pin=LCD-35
+Added Pin To Net: NetName=NetLCD_36 Pin=LCD-36
+Added Pin To Net: NetName=GND Pin=LCD-37
+Added Pin To Net: NetName=GND Pin=LCD-38
+Added Pin To Net: NetName=GND Pin=LCD-39
+Added Pin To Net: NetName=GND Pin=LCD-40
+Added Pin To Net: NetName=MISO LCD Pin=U1-22
+Added Pin To Net: NetName=CS LCD Pin=LCD-9
+Added Pin To Net: NetName=CS LCD Pin=U1-20
+Added Net: Name=CS LCD
+Added Pin To Net: NetName=MOSI LCD Pin=R23-1
+Added Pin To Net: NetName=MOSI LCD Pin=U1-23
+Added Net: Name=MOSI LCD
+Added Pin To Net: NetName=RESET LCD Pin=LCD-15
+Added Pin To Net: NetName=RESET LCD Pin=U1-41
+Added Net: Name=RESET LCD
+Added Pin To Net: NetName=SCK LCD Pin=LCD-10
+Added Pin To Net: NetName=SCK LCD Pin=U1-21
+Added Net: Name=SCK LCD
+Added Pin To Net: NetName=T_JTCK Pin=R3-2
+Added Pin To Net: NetName=T_JTCK Pin=U1-49
+Added Net: Name=T_JTCK
+Added Pin To Net: NetName=T_JTMS Pin=R4-2
+Added Pin To Net: NetName=T_JTMS Pin=U1-46
+Added Net: Name=T_JTMS
+Added Pin To Net: NetName=T_NRST Pin=R5-2
+Added Net: Name=T_NRST
+Added Pin To Net: NetName=T_SWO Pin=R6-2
+Added Pin To Net: NetName=T_SWO Pin=U1-55
+Added Net: Name=T_SWO

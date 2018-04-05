@@ -1,0 +1,10 @@
+Added Component: Designator=D2(PTVS12S1UR)
+Add component. Clean all parameters for all variants
+Added Component: Designator=D3(PTVS12S1UR)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=D2-A
+Added Pin To Net: NetName=Net*_2 Pin=D2-C
+Added Pin To Net: NetName=GND Pin=D3-A
+Added Pin To Net: NetName=Net*_1 Pin=D3-C
+Added Member To Class: ClassName=WCcircuit Member=Component D2 DIODE  PTVS12S1UR
+Added Member To Class: ClassName=WCcircuit Member=Component D3 DIODE  PTVS12S1UR

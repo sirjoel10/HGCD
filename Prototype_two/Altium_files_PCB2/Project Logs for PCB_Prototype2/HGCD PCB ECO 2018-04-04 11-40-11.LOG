@@ -1,0 +1,5 @@
+Added Component: Designator=*(WirelessIn)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=Net*_1 Pin=*-1
+Added Pin To Net: NetName=Net*_2 Pin=*-2
+Added Member To Class: ClassName=WCcircuit Member=Component * WirelessIn
