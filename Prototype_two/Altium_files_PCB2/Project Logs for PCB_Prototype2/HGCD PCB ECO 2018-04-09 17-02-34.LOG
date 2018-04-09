@@ -1,0 +1,9 @@
+Added Pin To Net: NetName=Net*_19 Pin=D3-C
+Added Pin To Net: NetName=Net*_19 Pin=P100-1
+Added Room: Name=connectors
+Added Room: Name=Magnetometer
+Added Room: Name=STM32
+Added Room: Name=TFT LCD ER-TFT018-2
+Added Room: Name=TPS6120x
+Added Room: Name=WCcircuit
+Added Room: Name=ZigBee

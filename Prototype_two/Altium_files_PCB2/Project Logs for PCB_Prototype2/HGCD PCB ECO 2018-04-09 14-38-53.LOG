@@ -1,0 +1,25 @@
+Added Component: Designator=U?(LTC3531EDD-3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Linear Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LTC3531EDD-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LTC3531EDD-3/Linear%20Technology/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetL1_1 Pin=U?-1
+Added Pin To Net: NetName=NetC5_2 Pin=U?-2
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=GND Pin=U?-4
+Added Pin To Net: NetName=Net*2_1 Pin=U?-6
+Added Pin To Net: NetName=NetL1_2 Pin=U?-7
+Added Pin To Net: NetName=GND Pin=U?-8
+Added Pin To Net: NetName=GND Pin=U?-9
+Added Member To Class: ClassName=TPS6120x Member=Component U? LTC3531EDD-3
+Added Room: Name=connectors
+Added Room: Name=Magnetometer
+Added Room: Name=STM32
+Added Room: Name=TFT LCD ER-TFT018-2
+Added Room: Name=TPS6120x
+Added Room: Name=WCcircuit
+Added Room: Name=ZigBee

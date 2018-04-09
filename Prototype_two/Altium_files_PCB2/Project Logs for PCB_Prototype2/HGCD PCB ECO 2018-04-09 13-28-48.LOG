@@ -1,0 +1,120 @@
+Removed Pin From Net: NetName=Net*2_1 Pin=C5-1
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=GND Pin=C7-2
+Removed Pin From Net: NetName=GND Pin=C8-2
+Removed Pin From Net: NetName=GND Pin=LCD-11
+Removed Pin From Net: NetName=Net*2_1 Pin=R7-2
+Removed Pin From Net: NetName=GND Pin=R9-1
+Removed Pin From Net: NetName=Net*2_1 Pin=U2-2
+Removed Pin From Net: NetName=NetL1_1 Pin=U2-3
+Removed Pin From Net: NetName=GND Pin=U2-11
+Removed Member From Class: ClassName=WCcircuit Member=1
+Removed Member From Class: ClassName=connectors Member=C1
+Removed Member From Class: ClassName=WCcircuit Member=C1
+Removed Member From Class: ClassName=WCcircuit Member=C3
+Removed Member From Class: ClassName=WCcircuit Member=C4
+Removed Member From Class: ClassName=WCcircuit Member=C5
+Removed Member From Class: ClassName=STM32 Member=C6
+Removed Member From Class: ClassName=WCcircuit Member=C6
+Removed Member From Class: ClassName=TPS6120x Member=C8
+Removed Member From Class: ClassName=WCcircuit Member=C8
+Removed Member From Class: ClassName=TPS6120x Member=C14
+Removed Member From Class: ClassName=TPS6120x Member=C17
+Removed Member From Class: ClassName=STM32 Member=C20
+Removed Member From Class: ClassName=Magnetometer Member=C28
+Removed Member From Class: ClassName=WCcircuit Member=C31
+Removed Member From Class: ClassName=ZigBee Member=C32
+Removed Member From Class: ClassName=WCcircuit Member=D1
+Removed Member From Class: ClassName=WCcircuit Member=P2
+Removed Member From Class: ClassName=TPS6120x Member=Q2
+Removed Member From Class: ClassName=WCcircuit Member=R2
+Removed Member From Class: ClassName=WCcircuit Member=R7
+Removed Member From Class: ClassName=TFT LCD ER-TFT018-2 Member=R10
+Removed Member From Class: ClassName=TPS6120x Member=R16
+Removed Member From Class: ClassName=STM32 Member=R19
+Removed Member From Class: ClassName=TPS6120x Member=R19
+Removed Member From Class: ClassName=WCcircuit Member=R21
+Removed Member From Class: ClassName=STM32 Member=U2
+Change Component Footprint: Designator=L1 Old Footprint=WE-TPC_2828 New Footprint=0603
+Change Component Comment : Designator=L1 Old Comment=744025002 New Comment=Inductor
+Change Component Comment : Designator=U2 Old Comment=TPS61200DRCR New Comment=LTC3531EDD-3
+Change component parameters: Designator = "C5"; Footprint = "C1206"; UniqueID = "\LESISORN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U2"; Footprint = "DFN-8_DD"; UniqueID = "\PIYNRTPO"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Linear Technology"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "LTC3531EDD-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LTC3531EDD-3/Linear%20Technology/view-part/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "L1"; Footprint = "0603"; UniqueID = "\QAAFELIB"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Code_IEC"; Value = "1005"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Code_JEITA"; Value = "0402"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Inductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "0402-A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10uH"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=NetL1_1 Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-3
+Added Pin To Net: NetName=Net*2_1 Pin=U2-6
+Added Pin To Net: NetName=GND Pin=U2-8
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=Diode1-C
+Added Pin To Net: NetName=NetC5_2 Pin=MOSFET1-1
+Added Pin To Net: NetName=NetC5_2 Pin=U2-2
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetL1_2 Pin=L1-2
+Added Pin To Net: NetName=NetL1_2 Pin=U2-7
+Added Net: Name=NetL1_2
+Added Pin To Net: NetName=R/W Pin=LCD-11
+Added Pin To Net: NetName=R/W Pin=U1-16
+Added Net: Name=R/W
+Added Member To Class: ClassName=WCcircuit Member=Component 2 MCP73837T-FCI/MF
+Added Member To Class: ClassName=STM32 Member=Component C2 Cap Semi
+Added Member To Class: ClassName=STM32 Member=Component C4 Cap Semi
+Added Member To Class: ClassName=TPS6120x Member=Component C5 Cap Semi
+Added Member To Class: ClassName=connectors Member=Component C10 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C13 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C14 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C15 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C16 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C19 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C21 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C22 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C24 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C26 Cap Semi
+Added Member To Class: ClassName=Magnetometer Member=Component C27 Cap Semi
+Added Member To Class: ClassName=ZigBee Member=Component C29 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component D3 DIODE  PTVS12S1UR
+Added Member To Class: ClassName=WCcircuit Member=Component P3 S2B-PH-K-S(LF)(SN)
+Added Member To Class: ClassName=TPS6120x Member=Component Q3 QNPN
+Added Member To Class: ClassName=STM32 Member=Component R1 Res3
+Added Member To Class: ClassName=connectors Member=Component R11 Res3
+Added Member To Class: ClassName=WCcircuit Member=Component R15 Res3
+Added Member To Class: ClassName=WCcircuit Member=Component R17 Res3
+Added Member To Class: ClassName=WCcircuit Member=Component R20 Res3
+Added Member To Class: ClassName=TPS6120x Member=Component R22 Res3
+Added Member To Class: ClassName=TFT LCD ER-TFT018-2 Member=Component R23 Res3
+Added Member To Class: ClassName=TFT LCD ER-TFT018-2 Member=Component R24 Res3
+Added Member To Class: ClassName=STM32 Member=Component U1 STM32L476RX
+Added Room: Name=connectors
+Added Room: Name=Magnetometer
+Added Room: Name=STM32
+Added Room: Name=TFT LCD ER-TFT018-2
+Added Room: Name=TPS6120x
+Added Room: Name=WCcircuit
+Added Room: Name=ZigBee

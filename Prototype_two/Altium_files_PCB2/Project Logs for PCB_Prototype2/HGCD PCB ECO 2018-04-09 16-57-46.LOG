@@ -1,0 +1,62 @@
+Removed Pin From Net: NetName=NetC13_2 Pin=WPIC1-2
+Removed Pin From Net: NetName=Net2_1 Pin=WPIC1-4
+Removed Pin From Net: NetName=GND Pin=WPIC1-9
+Removed Pin From Net: NetName=GND Pin=WPIC1-10
+Removed Pin From Net: NetName=GND Pin=WPIC1-11
+Removed Pin From Net: NetName=NetR16_1 Pin=WPIC1-14
+Removed Pin From Net: NetName=NetC17_2 Pin=WPIC1-18
+Removed Pin From Net: NetName=GND Pin=WPIC1-20
+Removed Member From Class: ClassName=WCcircuit Member=WPIC1
+Change Component Designator: OldDesignator=U? NewDesignator=U2
+Added Component: Designator=*(CONTROLLER_MSP430FR2522IRHLT)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=GND Pin=*-1
+Added Pin To Net: NetName=NetC13_2 Pin=*-2
+Added Pin To Net: NetName=Net2_1 Pin=*-4
+Added Pin To Net: NetName=GND Pin=*-9
+Added Pin To Net: NetName=GND Pin=*-10
+Added Pin To Net: NetName=GND Pin=*-11
+Added Pin To Net: NetName=NetR16_1 Pin=*-14
+Added Pin To Net: NetName=NetC17_2 Pin=*-18
+Added Pin To Net: NetName=GND Pin=*-20
+Change Net Name : Old Net Name=Net2_1 New Net Name=Net*_4
+Change Net Name : Old Net Name=NetC13_2 New Net Name=Net*_2
+Change Net Name : Old Net Name=NetC17_2 New Net Name=Net*_18
+Change Net Name : Old Net Name=NetR16_1 New Net Name=Net*_14
+Added Pin To Net: NetName=Net*_3 Pin=*-3
+Added Pin To Net: NetName=Net*_3 Pin=C16-2
+Added Net: Name=Net*_3
+Added Pin To Net: NetName=Net*_5 Pin=*-5
+Added Pin To Net: NetName=Net*_5 Pin=C26-2
+Added Net: Name=Net*_5
+Added Pin To Net: NetName=Net*_6 Pin=*-6
+Added Pin To Net: NetName=Net*_6 Pin=C14-2
+Added Net: Name=Net*_6
+Added Pin To Net: NetName=Net*_12 Pin=*-12
+Added Pin To Net: NetName=Net*_12 Pin=R18-1
+Added Net: Name=Net*_12
+Added Pin To Net: NetName=Net*_13 Pin=*-13
+Added Pin To Net: NetName=Net*_13 Pin=R14-1
+Added Net: Name=Net*_13
+Added Pin To Net: NetName=Net*_15 Pin=*-15
+Added Pin To Net: NetName=Net*_15 Pin=C24-2
+Added Net: Name=Net*_15
+Added Pin To Net: NetName=Net*_16 Pin=*-16
+Added Pin To Net: NetName=Net*_16 Pin=C25-2
+Added Net: Name=Net*_16
+Added Pin To Net: NetName=Net*_17 Pin=*-17
+Added Pin To Net: NetName=Net*_17 Pin=C23-2
+Added Net: Name=Net*_17
+Added Pin To Net: NetName=Net*_19 Pin=*-19
+Added Pin To Net: NetName=Net*_19 Pin=C22-1
+Added Net: Name=Net*_19
+Added Member To Class: ClassName=WCcircuit Member=Component * bq51013B
+Added Member To Class: ClassName=STM32 Member=Component P2 Header 4
+Added Member To Class: ClassName=ZigBee Member=Component Radio RF2401F20
+Added Room: Name=connectors
+Added Room: Name=Magnetometer
+Added Room: Name=STM32
+Added Room: Name=TFT LCD ER-TFT018-2
+Added Room: Name=TPS6120x
+Added Room: Name=WCcircuit
+Added Room: Name=ZigBee

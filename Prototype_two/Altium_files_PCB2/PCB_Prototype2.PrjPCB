@@ -245,6 +245,10 @@ DocumentUniqueId=
 DocumentPath=Project Outputs for PCB_Prototype2\Design Rule Check - HGCD.html
 DItemRevisionGUID=
 
+[GeneratedDocument2]
+DocumentPath=HGCD 2018-04-09 10-37-26.WAS
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0

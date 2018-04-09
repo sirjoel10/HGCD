@@ -1,0 +1,20 @@
+Added Component: Designator=WPIC1(CONTROLLER_MSP430FR2522IRHLT)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetC13_2 Pin=WPIC1-2
+Added Pin To Net: NetName=NetC16_2 Pin=WPIC1-3
+Added Pin To Net: NetName=Net2_1 Pin=WPIC1-4
+Added Pin To Net: NetName=NetC26_2 Pin=WPIC1-5
+Added Pin To Net: NetName=NetC14_2 Pin=WPIC1-6
+Added Pin To Net: NetName=GND Pin=WPIC1-9
+Added Pin To Net: NetName=GND Pin=WPIC1-10
+Added Pin To Net: NetName=GND Pin=WPIC1-11
+Added Pin To Net: NetName=NetR18_1 Pin=WPIC1-12
+Added Pin To Net: NetName=NetR14_1 Pin=WPIC1-13
+Added Pin To Net: NetName=NetR16_1 Pin=WPIC1-14
+Added Pin To Net: NetName=NetC24_2 Pin=WPIC1-15
+Added Pin To Net: NetName=NetC25_2 Pin=WPIC1-16
+Added Pin To Net: NetName=NetC23_2 Pin=WPIC1-17
+Added Pin To Net: NetName=NetC17_2 Pin=WPIC1-18
+Added Pin To Net: NetName=NetC22_1 Pin=WPIC1-19
+Added Pin To Net: NetName=GND Pin=WPIC1-20
+Added Member To Class: ClassName=WCcircuit Member=Component WPIC1 bq51013B

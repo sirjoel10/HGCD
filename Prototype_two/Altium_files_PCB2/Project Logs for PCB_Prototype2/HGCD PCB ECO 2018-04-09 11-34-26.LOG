@@ -1,0 +1,187 @@
+Removed Pin From Net: NetName=GND Pin=C11-1
+Removed Pin From Net: NetName=Net*2_1 Pin=C11-2
+Removed Pin From Net: NetName=GND Pin=C13-1
+Removed Pin From Net: NetName=NetC8_1 Pin=C13-2
+Removed Pin From Net: NetName=NetC8_1 Pin=R11-1
+Removed Pin From Net: NetName=GND Pin=U1-1
+Removed Pin From Net: NetName=GND Pin=U1-8
+Removed Pin From Net: NetName=GND Pin=U1-11
+Removed Member From Class: ClassName=WCcircuit Member=C15
+Removed Member From Class: ClassName=Magnetometer Member=C22
+Removed Member From Class: ClassName=TPS6120x Member=C23
+Removed Member From Class: ClassName=STM32 Member=C24
+Removed Member From Class: ClassName=TPS6120x Member=C25
+Removed Member From Class: ClassName=TPS6120x Member=C26
+Removed Member From Class: ClassName=connectors Member=C27
+Removed Member From Class: ClassName=WCcircuit Member=C27
+Removed Member From Class: ClassName=WCcircuit Member=P1
+Removed Member From Class: ClassName=STM32 Member=P3
+Removed Member From Class: ClassName=WCcircuit Member=R3
+Removed Member From Class: ClassName=WCcircuit Member=R4
+Removed Member From Class: ClassName=TFT LCD ER-TFT018-2 Member=R7
+Removed Member From Class: ClassName=TPS6120x Member=R12
+Removed Member From Class: ClassName=STM32 Member=R13
+Removed Member From Class: ClassName=STM32 Member=R17
+Removed Member From Class: ClassName=TFT LCD ER-TFT018-2 Member=R20
+Removed Member From Class: ClassName=WCcircuit Member=R23
+Change Component Designator: OldDesignator=*1 NewDesignator=P100
+Change Component Designator: OldDesignator=1 NewDesignator=2
+Change Component Designator: OldDesignator=2 NewDesignator=1
+Change Component Designator: OldDesignator=C1 NewDesignator=C22
+Change Component Designator: OldDesignator=C2 NewDesignator=C15
+Change Component Designator: OldDesignator=C3 NewDesignator=C13
+Change Component Designator: OldDesignator=C4 NewDesignator=C20
+Change Component Designator: OldDesignator=C5 NewDesignator=C14
+Change Component Designator: OldDesignator=C6 NewDesignator=C26
+Change Component Designator: OldDesignator=C7 NewDesignator=C16
+Change Component Designator: OldDesignator=C8 NewDesignator=C19
+Change Component Designator: OldDesignator=C9 NewDesignator=C18
+Change Component Designator: OldDesignator=C10 NewDesignator=C21
+Change Component Designator: OldDesignator=C12 NewDesignator=C5
+Change Component Designator: OldDesignator=C14 NewDesignator=C8
+Change Component Designator: OldDesignator=C15 NewDesignator=C6
+Change Component Designator: OldDesignator=C16 NewDesignator=C17
+Change Component Designator: OldDesignator=C17 NewDesignator=C23
+Change Component Designator: OldDesignator=C18 NewDesignator=C24
+Change Component Designator: OldDesignator=C19 NewDesignator=C25
+Change Component Designator: OldDesignator=C20 NewDesignator=C2
+Change Component Designator: OldDesignator=C21 NewDesignator=C1
+Change Component Designator: OldDesignator=C22 NewDesignator=C31
+Change Component Designator: OldDesignator=C23 NewDesignator=C12
+Change Component Designator: OldDesignator=C24 NewDesignator=C4
+Change Component Designator: OldDesignator=C25 NewDesignator=C3
+Change Component Designator: OldDesignator=C26 NewDesignator=C11
+Change Component Designator: OldDesignator=C27 NewDesignator=C28
+Change Component Designator: OldDesignator=C28 NewDesignator=C10
+Change Component Designator: OldDesignator=C29 NewDesignator=C32
+Change Component Designator: OldDesignator=C31 NewDesignator=C27
+Change Component Designator: OldDesignator=C32 NewDesignator=C29
+Change Component Designator: OldDesignator=Connector1 NewDesignator=Connector
+Change Component Designator: OldDesignator=D1 NewDesignator=D3
+Change Component Designator: OldDesignator=D3 NewDesignator=D1
+Change Component Designator: OldDesignator=LCD1 NewDesignator=LCD
+Change Component Designator: OldDesignator=P1 NewDesignator=P2
+Change Component Designator: OldDesignator=P2 NewDesignator=P3
+Change Component Designator: OldDesignator=P3 NewDesignator=P1
+Change Component Designator: OldDesignator=Q1 NewDesignator=Q2
+Change Component Designator: OldDesignator=Q2 NewDesignator=Q3
+Change Component Designator: OldDesignator=Q3 NewDesignator=Q1
+Change Component Designator: OldDesignator=R1 NewDesignator=R4
+Change Component Designator: OldDesignator=R2 NewDesignator=R3
+Change Component Designator: OldDesignator=R3 NewDesignator=R6
+Change Component Designator: OldDesignator=R4 NewDesignator=R5
+Change Component Designator: OldDesignator=R5 NewDesignator=R15
+Change Component Designator: OldDesignator=R6 NewDesignator=R17
+Change Component Designator: OldDesignator=R7 NewDesignator=R19
+Change Component Designator: OldDesignator=R8 NewDesignator=R13
+Change Component Designator: OldDesignator=R9 NewDesignator=R16
+Change Component Designator: OldDesignator=R10 NewDesignator=R20
+Change Component Designator: OldDesignator=R12 NewDesignator=R14
+Change Component Designator: OldDesignator=R13 NewDesignator=R18
+Change Component Designator: OldDesignator=R14 NewDesignator=R9
+Change Component Designator: OldDesignator=R15 NewDesignator=R7
+Change Component Designator: OldDesignator=R16 NewDesignator=R22
+Change Component Designator: OldDesignator=R17 NewDesignator=R2
+Change Component Designator: OldDesignator=R18 NewDesignator=R1
+Change Component Designator: OldDesignator=R19 NewDesignator=R24
+Change Component Designator: OldDesignator=R20 NewDesignator=R21
+Change Component Designator: OldDesignator=R21 NewDesignator=R23
+Change Component Designator: OldDesignator=R22 NewDesignator=R11
+Change Component Designator: OldDesignator=R23 NewDesignator=R10
+Change Component Designator: OldDesignator=R24 NewDesignator=R25
+Change Component Designator: OldDesignator=Radio1 NewDesignator=Radio
+Change Component Designator: OldDesignator=U1 NewDesignator=U2
+Change Component Designator: OldDesignator=U2 NewDesignator=U1
+Change component parameters: Designator = "L1"; Footprint = "WE-TPC_2828"; UniqueID = "\XLSUPFCG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/pbs/datasheet/744025002.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance"; Value = "57mO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "744025002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published Date"; Value = "July 2017"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Current"; Value = "1.8A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "2828"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2uH"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5"; Footprint = "C1206"; UniqueID = "\BCBJRXNS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8"; Footprint = "C1206"; UniqueID = "\RDVPTVJM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4.7uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C6"; Footprint = "C1206"; UniqueID = "\DRBAHLSL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9"; Footprint = "J1-0603"; UniqueID = "\VQTRYUXL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "180 k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7"; Footprint = "J1-0603"; UniqueID = "\TBXMGFQS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageDescription"; Value = "Chip Resistor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PackageReference"; Value = "J1-0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1 M"; VariantName = "[No Variations]"
+Added Component: Designator=C7(C1206)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "29-May-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "IPC-7351 Footprint Added."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "Chip Capacitor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "C1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "8-Jun-2000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=NetC8_1 Pin=U2-6
+Added Pin To Net: NetName=NetC8_1 Pin=U2-8
+Change Net Name : Old Net Name=Net*_1 New Net Name=NetC22_1
+Change Net Name : Old Net Name=Net*_2 New Net Name=NetC13_1
+Change Net Color : Old Net Color=RGB(110, 255, 110) New Net Color=Default
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=NetC7_1 Pin=U2-1
+Added Net: Name=NetC7_1
+Added Member To Class: ClassName=STM32 Member=Component C2 Cap Semi
+Added Member To Class: ClassName=TPS6120x Member=Component C5 Cap Semi
+Added Member To Class: ClassName=TPS6120x Member=Component C7 Cap Semi
+Added Member To Class: ClassName=connectors Member=Component C10 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C13 Cap Semi
+Added Member To Class: ClassName=WCcircuit Member=Component C22 Cap Semi
+Added Member To Class: ClassName=Magnetometer Member=Component C27 Cap Semi
+Added Member To Class: ClassName=STM32 Member=Component P2 Header 4
+Added Member To Class: ClassName=WCcircuit Member=Component P3 S2B-PH-K-S(LF)(SN)
+Added Member To Class: ClassName=STM32 Member=Component R5 Res3
+Added Member To Class: ClassName=STM32 Member=Component R6 Res3
+Added Member To Class: ClassName=WCcircuit Member=Component R15 Res3
+Added Member To Class: ClassName=WCcircuit Member=Component R17 Res3
+Added Member To Class: ClassName=WCcircuit Member=Component R20 Res3
+Added Member To Class: ClassName=TFT LCD ER-TFT018-2 Member=Component R23 Res3
+Added Member To Class: ClassName=TFT LCD ER-TFT018-2 Member=Component R25 Res3
+Added Member To Class: ClassName=ZigBee Member=Component Radio RF2401F20

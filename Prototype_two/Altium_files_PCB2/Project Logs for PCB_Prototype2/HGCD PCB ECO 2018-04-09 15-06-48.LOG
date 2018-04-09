@@ -1,0 +1,8 @@
+Removed Member From Class: ClassName=STM32 Member=R6
+Added Room: Name=connectors
+Added Room: Name=Magnetometer
+Added Room: Name=STM32
+Added Room: Name=TFT LCD ER-TFT018-2
+Added Room: Name=TPS6120x
+Added Room: Name=WCcircuit
+Added Room: Name=ZigBee
