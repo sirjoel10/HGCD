@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=Net1_1 Pin=1-1
+Added Pin To Net: NetName=Net1_1 Pin=U2-1
+Added Net: Name=Net1_1
+Added Pin To Net: NetName=Net1_2 Pin=1-2
+Added Pin To Net: NetName=Net1_2 Pin=U2-7
+Added Net: Name=Net1_2
+Added Member To Class: ClassName=TPS6120x Member=Component 1 MSS4020-103MLB Inductor

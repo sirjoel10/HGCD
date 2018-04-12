@@ -1,0 +1,5 @@
+Added Component: Designator=Ind(MSS4020-103MLB)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=NetInd_1 Pin=Ind-1
+Added Pin To Net: NetName=NetInd_2 Pin=Ind-2
+Added Member To Class: ClassName=TPS6120x Member=Component Ind MSS4020-103MLB Inductor

@@ -1,7 +1,10 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\phiwersports\Documents\GitHub\HGCD\Prototype_two\Altium_files_PCB2\HGCD.PcbDoc
-Date     : 2018-04-11
-Time     : 18:18:35
+Date     : 2018-04-12
+Time     : 17:14:31
+
+WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
+   Polygon named: Bottom layer-No Net On Bottom layer
 
 Processing Rule : Clearance Constraint (Gap=0.127mm) (All),(All)
 Rule Violations :0
@@ -15,7 +18,8 @@ Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :2
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
-Rule Violations :0
+   Violation between Modified Polygon: Polygon Shelved  (Bottom layer-No Net) on Bottom layer 
+Rule Violations :1
 
 Processing Rule : Width Constraint (Min=0.025mm) (Max=1mm) (Preferred=0.254mm) (All)
 Rule Violations :0
@@ -33,6 +37,7 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.052mm < 0.254mm) Between Pad *-1(65.925mm,35.661mm) on Top layer And Pad *-21(66.4mm,35.698mm) on Top layer [Top Solder] Mask Sliver [0.052mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.122mm < 0.254mm) Between Pad *-1(65.925mm,35.661mm) on Top layer And Pad *-21(66.675mm,33.511mm) on Top layer [Top Solder] Mask Sliver [0.122mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.052mm < 0.254mm) Between Pad *-1(65.925mm,35.661mm) on Top layer And Pad *-21(66.675mm,35.236mm) on Top layer [Top Solder] Mask Sliver [0.052mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.254mm < 0.254mm) Between Pad *-1(65.925mm,35.661mm) on Top layer And Via (65.278mm,36.957mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.254mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.052mm < 0.254mm) Between Pad *-10(65.925mm,31.361mm) on Top layer And Pad *-21(66.4mm,31.324mm) on Top layer [Top Solder] Mask Sliver [0.052mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.052mm < 0.254mm) Between Pad *-10(65.925mm,31.361mm) on Top layer And Pad *-21(66.675mm,31.786mm) on Top layer [Top Solder] Mask Sliver [0.052mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.122mm < 0.254mm) Between Pad *-10(65.925mm,31.361mm) on Top layer And Pad *-21(66.675mm,33.511mm) on Top layer [Top Solder] Mask Sliver [0.122mm]
@@ -89,14 +94,19 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.057mm < 0.254mm) Between Pad *-8(65.025mm,32.261mm) on Top layer And Pad *-9(65.025mm,31.761mm) on Top layer [Top Solder] Mask Sliver [0.057mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.254mm) Between Pad 1-1(35.814mm,50.352mm) on Multi-Layer And Pad 1-2(35.814mm,49.052mm) on Multi-Layer [Top Solder] Mask Sliver [0.197mm] / [Bottom Solder] Mask Sliver [0.197mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.254mm) Between Pad 1-2(35.814mm,49.052mm) on Multi-Layer And Pad 1-3(35.814mm,47.752mm) on Multi-Layer [Top Solder] Mask Sliver [0.197mm] / [Bottom Solder] Mask Sliver [0.197mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.217mm < 0.254mm) Between Pad C23-2(70.784mm,37.211mm) on Top layer And Via (70.358mm,35.306mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.217mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.217mm < 0.254mm) Between Pad C3-1(71.708mm,50.546mm) on Bottom layer And Via (71.755mm,52.451mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.217mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.217mm < 0.254mm) Between Pad C31-2(71.802mm,29.591mm) on Bottom layer And Via (71.755mm,27.686mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.217mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.219mm < 0.254mm) Between Pad C3-2(69.008mm,50.546mm) on Bottom layer And Via (69.723mm,52.451mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.219mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.056mm < 0.254mm) Between Pad C7-2(66.929mm,53.26mm) on Bottom layer And Via (66.929mm,51.816mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.056mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.079mm < 0.254mm) Between Pad C8-1(51.562mm,36.623mm) on Bottom layer And Via (52.705mm,35.179mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.079mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.236mm < 0.254mm) Between Pad C8-2(51.562mm,39.323mm) on Bottom layer And Via (52.832mm,40.894mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.236mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.254mm) Between Pad L1-1(74.43mm,55.753mm) on Top layer And Pad L1-2(75.43mm,55.753mm) on Top layer [Top Solder] Mask Sliver [0.197mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.221mm < 0.254mm) Between Pad C1-1(74.676mm,50.738mm) on Bottom layer And Via (74.676mm,52.197mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.221mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.004mm < 0.254mm) Between Pad C16-1(60.895mm,35.814mm) on Top layer And Via (59.817mm,34.798mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.004mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.182mm < 0.254mm) Between Pad C26-1(61.022mm,33.655mm) on Top layer And Via (59.817mm,34.798mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.182mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.109mm < 0.254mm) Between Pad C27-1(34.352mm,52.832mm) on Bottom layer And Via (33.909mm,54.229mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.109mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.236mm < 0.254mm) Between Pad C27-2(35.752mm,52.832mm) on Bottom layer And Via (35.814mm,54.356mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.236mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.089mm < 0.254mm) Between Pad C30-1(52.516mm,64.008mm) on Bottom layer And Via (53.594mm,65.151mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.089mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.109mm < 0.254mm) Between Pad C30-2(51.116mm,64.008mm) on Bottom layer And Via (51.228mm,65.405mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.109mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.131mm < 0.254mm) Between Pad C34-1(83.058mm,65.721mm) on Bottom layer And Via (81.661mm,65.024mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.131mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.029mm < 0.254mm) Between Pad C7-2(66.04mm,53.656mm) on Bottom layer And Via (66.802mm,52.418mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.029mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.094mm < 0.254mm) Between Pad C8-1(52.832mm,37.4mm) on Bottom layer And Via (52.578mm,36.068mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.094mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.236mm < 0.254mm) Between Pad C8-2(52.832mm,38.8mm) on Bottom layer And Via (51.308mm,38.735mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.236mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.254mm) Between Pad Connector-4(56.435mm,62.064mm) on Multi-Layer And Via (56.388mm,63.754mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.09mm] / [Bottom Solder] Mask Sliver [0.09mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.167mm < 0.254mm) Between Pad D1-2(58.974mm,59.055mm) on Bottom layer And Via (56.769mm,59.436mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.167mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.097mm < 0.254mm) Between Pad LCD-1(73.542mm,22.585mm) on Bottom layer And Pad LCD-2(73.042mm,22.585mm) on Bottom layer [Bottom Solder] Mask Sliver [0.097mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.097mm < 0.254mm) Between Pad LCD-10(69.042mm,22.585mm) on Bottom layer And Pad LCD-11(68.542mm,22.585mm) on Bottom layer [Bottom Solder] Mask Sliver [0.097mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.097mm < 0.254mm) Between Pad LCD-10(69.042mm,22.585mm) on Bottom layer And Pad LCD-9(69.542mm,22.585mm) on Bottom layer [Bottom Solder] Mask Sliver [0.097mm]
@@ -136,21 +146,128 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.097mm < 0.254mm) Between Pad LCD-6(71.042mm,22.585mm) on Bottom layer And Pad LCD-7(70.542mm,22.585mm) on Bottom layer [Bottom Solder] Mask Sliver [0.097mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.097mm < 0.254mm) Between Pad LCD-7(70.542mm,22.585mm) on Bottom layer And Pad LCD-8(70.042mm,22.585mm) on Bottom layer [Bottom Solder] Mask Sliver [0.097mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.097mm < 0.254mm) Between Pad LCD-8(70.042mm,22.585mm) on Bottom layer And Pad LCD-9(69.542mm,22.585mm) on Bottom layer [Bottom Solder] Mask Sliver [0.097mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.138mm < 0.254mm) Between Pad P3-2(71.803mm,65.659mm) on Top layer And Via (73.279mm,64.77mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.138mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.156mm < 0.254mm) Between Pad R14-1(72.148mm,30.099mm) on Top layer And Via (71.802mm,31.543mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.156mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.109mm < 0.254mm) Between Pad R14-2(73.648mm,30.099mm) on Top layer And Via (73.914mm,31.496mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.109mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.002mm < 0.254mm) Between Pad R20-1(72.009mm,24.875mm) on Top layer And Via (72.771mm,26.035mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.002mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.221mm < 0.254mm) Between Pad R7-1(49.276mm,49.161mm) on Top layer And Via (49.403mm,47.752mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.221mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.12mm < 0.254mm) Between Pad Radio-4(41.951mm,45.536mm) on Top layer And Via (41.783mm,43.688mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.12mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.216mm < 0.254mm) Between Pad U1-30(58.013mm,38.954mm) on Bottom layer And Via (57.912mm,37.303mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.216mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.227mm < 0.254mm) Between Pad U1-31(57.513mm,38.954mm) on Bottom layer And Via (57.912mm,37.303mm) from Top layer to Bottom layer [Bottom Solder] Mask Sliver [0.227mm]
-Rule Violations :110
+   Violation between Minimum Solder Mask Sliver Constraint: (0.235mm < 0.254mm) Between Via (67.945mm,38.1mm) from Top layer to Bottom layer And Via (69.088mm,36.83mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.235mm] / [Bottom Solder] Mask Sliver [0.235mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.136mm < 0.254mm) Between Via (70.73mm,62.865mm) from Top layer to Bottom layer And Via (71.247mm,61.341mm) from Top layer to Bottom layer [Top Solder] Mask Sliver [0.136mm] / [Bottom Solder] Mask Sliver [0.136mm]
+Rule Violations :122
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Track (56.007mm,31.068mm)(56.007mm,31.877mm) on Bottom layer 
-   Violation between Net Antennae: Track (72.089mm,49.53mm)(74.676mm,49.53mm) on Bottom layer 
+Rule Violations :0
+
+Processing Rule : Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2'))
+   Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT SIP Component LCD-TFT LCD ER-TFT018-2 (63.542mm,24.485mm) on Bottom layer 
+   Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component C31-Cap Semi (72.517mm,29.845mm) on Bottom layer 
+   Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component C32-Cap Semi (57.15mm,28.067mm) on Bottom layer 
+   Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component R10-Res3 (50.038mm,25.146mm) on Bottom layer 
+   Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component R23-Res3 (63.754mm,28.829mm) on Bottom layer 
+   Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component R24-Res3 (70.231mm,29.083mm) on Bottom layer 
+Rule Violations :6
+
+Processing Rule : Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x'))
+   Violation between Room Definition: Between Component U2-LTC3531EDD-3 (82.915mm,54.211mm) on Top layer And Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component C33-Cap Semi (60.452mm,65.913mm) on Bottom layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component C34-Cap Semi (83.058mm,66.421mm) on Bottom layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component C35-Cap Semi (60.325mm,68.199mm) on Bottom layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component C5-Cap Semi (83.947mm,51.054mm) on Top layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component C6-Cap Semi (84.582mm,57.404mm) on Top layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component Ind-MSS4020-103MLB Inductor (76.2mm,55.245mm) on Top layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component Q1-PNP (64.518mm,66.421mm) on Bottom layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component Q3-QNPN (70.739mm,66.548mm) on Bottom layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component R21-Res3 (67.564mm,66.802mm) on Bottom layer 
+   Violation between Room Definition: Between Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x')) And SMT Small Component R22-Res3 (74.295mm,67.056mm) on Bottom layer 
+Rule Violations :11
+
+Processing Rule : Room ZigBee (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('ZigBee'))
+   Violation between Room Definition: Between Room ZigBee (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('ZigBee')) And SMT SIP Component Radio-RF2401F20 (43.351mm,43.146mm) on Top layer 
+   Violation between Room Definition: Between Room ZigBee (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('ZigBee')) And SMT Small Component C29-Cap Semi (45.339mm,48.895mm) on Top layer 
 Rule Violations :2
+
+Processing Rule : Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit'))
+   Violation between Room Definition: Between Component *-bq51013B (66.675mm,33.511mm) on Top layer And Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) 
+   Violation between Room Definition: Between Component 2-MCP73837T-FCI/MF (59.817mm,40.767mm) on Top layer And Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) 
+   Violation between Room Definition: Between Component P3-S2B-PH-K-S(LF)(SN) (70.403mm,61.859mm) on Top layer And Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C11-Cap Semi (72.898mm,61.976mm) on Bottom layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C12-Cap Semi (74.422mm,61.976mm) on Bottom layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C13-Cap Semi (59.309mm,27.87mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C14-Cap Semi (61.468mm,30.804mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C15-Cap Semi (59.396mm,26.416mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C16-Cap Semi (61.595mm,35.814mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C17-Cap Semi (68.199mm,25.4mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C18-Cap Semi (66.675mm,25.4mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C19-Cap Semi (65.151mm,25.4mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C20-Cap Semi (59.309mm,29.337mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C21-Cap Semi (72.136mm,39.37mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C22-Cap Semi (59.309mm,24.765mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C23-Cap Semi (72.898mm,36.703mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C24-Cap Semi (75.946mm,36.449mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C25-Cap Semi (74.422mm,36.576mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component C26-Cap Semi (61.722mm,33.655mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component D2-DIODE  PTVS12S1UR (57.258mm,33.56mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component D3-DIODE  PTVS12S1UR (50.277mm,29.511mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component Diode1-Diod MBR0520L-TP (64.758mm,46.355mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component P100-WirelessIn (50.8mm,33.782mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component R13-Res3 (63.754mm,39.694mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component R14-Res3 (72.898mm,30.099mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component R15-Res3 (55.499mm,42.602mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component R16-Res3 (70.358mm,24.125mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component R17-Res3 (55.511mm,41.148mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component R18-Res3 (74.168mm,24.01mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component R19-Res3 (63.754mm,41.148mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SMT Small Component R20-Res3 (72.009mm,24.125mm) on Top layer 
+   Violation between Room Definition: Between Room WCcircuit (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('WCcircuit')) And SOIC Component MOSFET1-fds9431a (59.182mm,46.99mm) on Top layer 
+Rule Violations :32
+
+Processing Rule : Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32'))
+   Violation between Room Definition: Between Component X1-ABS25-32-768KHZ-T (76.327mm,44.259mm) on Bottom layer And Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) 
+   Violation between Room Definition: Between LCC Component U1-STM32L476RX (60.763mm,44.704mm) on Bottom layer And Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SIP Component P2-Header 5 (40.894mm,62.611mm) on Top layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And Small Component P1-Header 2 (81.407mm,39.624mm) on Top layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C1-Cap Semi (74.676mm,50.038mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C28-Cap Semi (63.5mm,36.068mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C2-Cap Semi (77.089mm,49.53mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C36-Cap Semi (45.212mm,50.349mm) on Top layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C3-Cap Semi (68.834mm,50.038mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C4-Cap Semi (69.215mm,42.672mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C7-Cap Semi (66.04mm,54.356mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C8-Cap Semi (52.832mm,38.1mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R1-Res3 (70.739mm,48.387mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R2-Res3 (70.612mm,46.863mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R3-22 (43.942mm,62.992mm) on Top layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R4-22 (43.942mm,59.69mm) on Top layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R5-22 (47.752mm,49.911mm) on Top layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R7-Res3 (49.276mm,49.911mm) on Top layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R8-Res3 (61.849mm,53.467mm) on Bottom layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R9-Res3 (60.325mm,53.455mm) on Bottom layer 
+Rule Violations :20
+
+Processing Rule : Room Magnetometer (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Magnetometer'))
+   Violation between Room Definition: Between Room Magnetometer (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Magnetometer')) And Small Component 1-magnometer (35.814mm,50.352mm) on Bottom layer 
+   Violation between Room Definition: Between Room Magnetometer (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Magnetometer')) And SMT Small Component C27-Cap Semi (35.052mm,52.832mm) on Bottom layer 
+   Violation between Room Definition: Between Room Magnetometer (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Magnetometer')) And SMT Small Component C9-Cap Semi (33.274mm,42.037mm) on Bottom layer 
+   Violation between Room Definition: Between Room Magnetometer (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('Magnetometer')) And SMT Small Component R6-Res3 (34.036mm,44.323mm) on Bottom layer 
+Rule Violations :4
+
+Processing Rule : Room connectors (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('connectors'))
+   Violation between Room Definition: Between Component *2-Connector button (85.539mm,64.81mm) on Top layer And Room connectors (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('connectors')) 
+   Violation between Room Definition: Between Room connectors (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('connectors')) And SIP Component Connector-ConnectorWtoB (48.935mm,62.064mm) on Top layer 
+   Violation between Room Definition: Between Room connectors (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('connectors')) And SMT Small Component C10-Cap Semi (54.229mm,56.007mm) on Bottom layer 
+   Violation between Room Definition: Between Room connectors (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('connectors')) And SMT Small Component C30-Cap Semi (51.816mm,64.008mm) on Bottom layer 
+   Violation between Room Definition: Between Room connectors (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('connectors')) And SMT Small Component D1-Diode (55.499mm,59.055mm) on Bottom layer 
+   Violation between Room Definition: Between Room connectors (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('connectors')) And SMT Small Component Q2-QNPN (46.99mm,63.246mm) on Top layer 
+   Violation between Room Definition: Between Room connectors (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('connectors')) And SMT Small Component R11-Res3 (62.357mm,59.563mm) on Bottom layer 
+Rule Violations :7
 
 Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 114
+Violations Detected : 207
 Waived Violations : 0
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:00

@@ -1,0 +1,18 @@
+Removed Member From Class: ClassName=STM32 Member=C?
+Removed Member From Class: ClassName=STM32 Member=R?
+Removed Member From Class: ClassName=TFT LCD ER-TFT018-2 Member=R?
+Change Component Footprint: Designator=C2 Old Footprint=C1206 New Footprint=1608[0603]
+Change Component Designator: OldDesignator=C? NewDesignator=C9
+Change Component Designator: OldDesignator=C? NewDesignator=C36
+Change Component Designator: OldDesignator=R? NewDesignator=R6
+Change Component Designator: OldDesignator=R? NewDesignator=R7
+Change Component Designator: OldDesignator=R? NewDesignator=R8
+Change Component Designator: OldDesignator=R? NewDesignator=R9
+Change Component Designator: OldDesignator=R? NewDesignator=R10
+Change Net Name : Old Net Name=NetC?_2 New Net Name=NetC9_2
+Change Net Name : Old Net Name=NetR?_2 New Net Name=NetR8_2
+Added Member To Class: ClassName=STM32 Member=Component C36 Cap Semi
+Added Member To Class: ClassName=STM32 Member=Component R7 Res3
+Added Member To Class: ClassName=STM32 Member=Component R8 Res3
+Added Member To Class: ClassName=STM32 Member=Component R9 Res3
+Added Member To Class: ClassName=TFT LCD ER-TFT018-2 Member=Component R10 Res3

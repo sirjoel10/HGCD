@@ -1,0 +1,7 @@
+Change Room Name: Old Name=connectors_1 New Name=connectors
+Change Room Name: Old Name=STM_1 New Name=STM32
+Change Room Name: Old Name=TFT LCD ER-TFT018-_1 New Name=TFT LCD ER-TFT018-2
+Change Room Name: Old Name=TPS6120x_1 New Name=TPS6120x
+Change Room Name: Old Name=WCcircuit_1 New Name=WCcircuit
+Change Room Name: Old Name=ZigBee_1 New Name=ZigBee
+Added Room: Name=Magnetometer
