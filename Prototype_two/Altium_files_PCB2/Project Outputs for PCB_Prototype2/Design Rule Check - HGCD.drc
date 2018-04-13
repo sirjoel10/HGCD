@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\phiwersports\Documents\GitHub\HGCD\Prototype_two\Altium_files_PCB2\HGCD.PcbDoc
-Date     : 2018-04-12
-Time     : 17:14:31
+Date     : 2018-04-13
+Time     : 10:02:36
 
 WARNING: Design contains shelved or modified (but not repoured) polygons. The result of DRC is not correct. Recommended to restore/repour all polygons and proceed with DRC again
    Polygon named: Bottom layer-No Net On Bottom layer
@@ -13,9 +13,7 @@ Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net PAD Between Pad *-21(66.675mm,31.786mm) on Top layer And Pad *-21(66.675mm,32.236mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net PAD Between Pad *-21(66.675mm,34.786mm) on Multi-Layer And Pad *-21(66.675mm,35.236mm) on Top layer 
-Rule Violations :2
+Rule Violations :0
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
    Violation between Modified Polygon: Polygon Shelved  (Bottom layer-No Net) on Bottom layer 
@@ -165,9 +163,9 @@ Processing Rule : Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm,
    Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT SIP Component LCD-TFT LCD ER-TFT018-2 (63.542mm,24.485mm) on Bottom layer 
    Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component C31-Cap Semi (72.517mm,29.845mm) on Bottom layer 
    Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component C32-Cap Semi (57.15mm,28.067mm) on Bottom layer 
+   Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component LCD 2.8 V diode-PDZ2.7B,115 Zenerdiode (70.231mm,29.833mm) on Bottom layer 
    Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component R10-Res3 (50.038mm,25.146mm) on Bottom layer 
    Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component R23-Res3 (63.754mm,28.829mm) on Bottom layer 
-   Violation between Room Definition: Between Room TFT LCD ER-TFT018-2 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TFT LCD ER-TFT018-2')) And SMT Small Component R24-Res3 (70.231mm,29.083mm) on Bottom layer 
 Rule Violations :6
 
 Processing Rule : Room TPS6120x (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('TPS6120x'))
@@ -229,6 +227,7 @@ Processing Rule : Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InCo
    Violation between Room Definition: Between LCC Component U1-STM32L476RX (60.763mm,44.704mm) on Bottom layer And Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SIP Component P2-Header 5 (40.894mm,62.611mm) on Top layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And Small Component P1-Header 2 (81.407mm,39.624mm) on Top layer 
+   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component 0R-Res3 (70.612mm,46.863mm) on Bottom layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C1-Cap Semi (74.676mm,50.038mm) on Bottom layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C28-Cap Semi (63.5mm,36.068mm) on Bottom layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C2-Cap Semi (77.089mm,49.53mm) on Bottom layer 
@@ -238,7 +237,6 @@ Processing Rule : Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InCo
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C7-Cap Semi (66.04mm,54.356mm) on Bottom layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component C8-Cap Semi (52.832mm,38.1mm) on Bottom layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R1-Res3 (70.739mm,48.387mm) on Bottom layer 
-   Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R2-Res3 (70.612mm,46.863mm) on Bottom layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R3-22 (43.942mm,62.992mm) on Top layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R4-22 (43.942mm,59.69mm) on Top layer 
    Violation between Room Definition: Between Room STM32 (Bounding Region = (0mm, 0mm, 50.8mm, 25.4mm) (InComponentClass('STM32')) And SMT Small Component R5-22 (47.752mm,49.911mm) on Top layer 
@@ -268,6 +266,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Al
 Rule Violations :0
 
 
-Violations Detected : 207
+Violations Detected : 205
 Waived Violations : 0
 Time Elapsed        : 00:00:00

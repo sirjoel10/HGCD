@@ -1,0 +1,8 @@
+Added Component: Designator=LCD 2.8 V diode(PDZ2.7B,115)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=VCC Pin=LCD 2.8 V diode-2
+Added Pin To Net: NetName=NetLCD 2.8 V diode_1 Pin=LCD 2.8 V diode-1
+Added Pin To Net: NetName=NetLCD 2.8 V diode_1 Pin=LCD-6
+Added Pin To Net: NetName=NetLCD 2.8 V diode_1 Pin=LCD-7
+Added Net: Name=NetLCD 2.8 V diode_1
+Added Member To Class: ClassName=TFT LCD ER-TFT018-2 Member=Component LCD 2.8 V diode PDZ2.7B,115 Zenerdiode
