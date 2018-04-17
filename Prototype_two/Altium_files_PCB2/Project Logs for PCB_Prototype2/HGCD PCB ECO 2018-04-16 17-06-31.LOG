@@ -1,0 +1,6 @@
+Added Component: Designator=REF1(FIDUCIAL_SQ1mm_SQ5)
+Add component. Clean all parameters for all variants
+Added Component: Designator=REF2(FIDUCIAL_SQ1mm_SQ5)
+Add component. Clean all parameters for all variants
+Added Member To Class: ClassName=STM32 Member=Component REF1 Fudical sq.
+Added Member To Class: ClassName=STM32 Member=Component REF2 Fudical sq.

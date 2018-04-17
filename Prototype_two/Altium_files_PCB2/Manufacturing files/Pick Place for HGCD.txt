@@ -1,0 +1,98 @@
+Altium Designer Pick and Place Locations
+C:\Users\phiwersports\Documents\GitHub\HGCD\Prototype_two\Altium_files_PCB2\Project Outputs for PCB_Prototype2\Pick Place for HGCD.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       16-04-18
+Time:       17:27
+Revision:   11ddbb849b92aa2158b4899f5a8fdf77d16480ad
+Variant:    No variations
+Units used: mm
+
+Designator Comment                   Layer       Footprint                    Center-X(mm) Center-Y(mm) Rotation Description                                                                   
+REF2       "Fudical sq."             TopLayer    FIDUCIAL_SQ1mm_SQ5           35.0520mm    23.1140mm    90       "Fiducal square 1mm"                                                          
+REF1       "Fudical sq."             TopLayer    FIDUCIAL_SQ1mm_SQ5           40.7670mm    66.8020mm    90       "Fiducal square 1mm"                                                          
+R12        Res3                      TopLayer    J1-0603                      48.2600mm    57.1620mm    90       Resistor                                                                      
+D4         "PDZ2.7B,115 Zenerdiode"  BottomLayer PDZ2.7B,115                  70.2310mm    29.8330mm    270      ""                                                                            
+R6         Res3                      BottomLayer J1-0603                      34.0360mm    44.3230mm    270      Resistor                                                                      
+Ind        "MSS4020-103MLB Inductor" TopLayer    MSS4020-103MLB               77.1565mm    54.2885mm    0        ""                                                                            
+Radio      RF2401F20                 TopLayer    RF2401F20                    41.5410mm    36.6160mm    270      ""                                                                            
+R9         Res3                      BottomLayer J1-0603                      60.3250mm    53.4550mm    270      Resistor                                                                      
+R7         Res3                      TopLayer    J1-0603                      49.2760mm    49.9110mm    90       Resistor                                                                      
+R8         Res3                      BottomLayer J1-0603                      61.8490mm    53.4670mm    270      Resistor                                                                      
+R10        Res3                      BottomLayer J1-0603                      50.0380mm    25.1460mm    270      Resistor                                                                      
+C36        "Cap Semi"                TopLayer    1608[0603]                   45.2120mm    50.3493mm    0        "Capacitor (Semiconductor SIM Model)"                                         
+C9         "Cap Semi"                BottomLayer 1608[0603]                   33.2740mm    42.0370mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C35        "Cap Semi"                BottomLayer 1608[0603]                   60.3250mm    68.1990mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C34        "Cap Semi"                BottomLayer 1608[0603]                   83.0580mm    66.4210mm    90       "Capacitor (Semiconductor SIM Model)"                                         
+C33        "Cap Semi"                BottomLayer 1608[0603]                   60.4520mm    65.9130mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C32        "Cap Semi"                BottomLayer 1608[0603]                   57.1500mm    28.0670mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+Connector  ConnectorWtoB             TopLayer    CONNECTOR_WIRE_TO_PCB        57.6850mm    58.4640mm    180      ""                                                                            
+C8         "Cap Semi"                BottomLayer 1608[0603]                   52.8320mm    38.1000mm    90       "Capacitor (Semiconductor SIM Model)"                                         
+C7         "Cap Semi"                BottomLayer 1608[0603]                   66.0400mm    54.3560mm    270      "Capacitor (Semiconductor SIM Model)"                                         
+P2         "Header 5"                TopLayer    HDR1X5                       40.8940mm    57.5310mm    270      "Header, 5-Pin"                                                               
+bq51013B   bq51013B                  TopLayer    CONTROLLER_MSP430FR2522IRHLT 66.6750mm    33.5110mm    0        ""                                                                            
+U2         LTC3531EDD-3              TopLayer    LTC3531EDD-3                 82.9249mm    54.1940mm    90       "LTC3531 - 200mA Buck-Boost Synchronous DC/DC Converters"                     
+LCD        "TFT LCD ER-TFT018-2"     BottomLayer LCD_TFT_DISPLAY              63.7920mm    23.7350mm    90       ""                                                                            
+D3         "DIODE  PTVS12S1UR"       TopLayer    PTVS12S1UR                   51.3641mm    29.5810mm    90       ""                                                                            
+D2         "DIODE  PTVS12S1UR"       TopLayer    PTVS12S1UR                   57.3282mm    32.4729mm    360      ""                                                                            
+C23        "Cap Semi"                TopLayer    1608[0603]                   72.8980mm    36.7030mm    270      "Capacitor (Semiconductor SIM Model)"                                         
+C17        "Cap Semi"                TopLayer    1608[0603]                   68.1990mm    25.4000mm    90       "Capacitor (Semiconductor SIM Model)"                                         
+C25        "Cap Semi"                TopLayer    1608[0603]                   74.4220mm    36.5760mm    270      "Capacitor (Semiconductor SIM Model)"                                         
+C21        "Cap Semi"                TopLayer    1608[0603]                   72.1360mm    39.3700mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+P100       WirelessIn                TopLayer    WIRELESSIN                   50.8000mm    33.7820mm    180      ""                                                                            
+C29        "Cap Semi"                TopLayer    1608[0603]                   45.3390mm    48.8950mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+C12        "Cap Semi"                BottomLayer 1608[0603]                   74.4220mm    61.9760mm    90       "Capacitor (Semiconductor SIM Model)"                                         
+P3         S2B-PH-K-S(LF)(SN)        TopLayer    JST_S2B-PH-K-S(LF)(SN)       70.8028mm    62.7840mm    180      "Header Side Entry 2way"                                                      
+C31        "Cap Semi"                BottomLayer 1608[0603]                   72.5170mm    29.8450mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+C30        "Cap Semi"                BottomLayer 1608[0603]                   51.8160mm    64.0080mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+C28        "Cap Semi"                BottomLayer 1608[0603]                   63.5000mm    36.0680mm    90       "Capacitor (Semiconductor SIM Model)"                                         
+C27        "Cap Semi"                BottomLayer 1608[0603]                   35.0520mm    52.8320mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+X1         ABS25-32-768KHZ-T         BottomLayer XTAL_ABS25-32-768KHZ-T       76.3270mm    44.2588mm    180      ""                                                                            
+U1         STM32L476RX               BottomLayer LQFP64-10x10mm               60.7634mm    44.7040mm    180      Imported                                                                      
+R23        Res3                      BottomLayer J1-0603                      63.7540mm    28.8290mm    90       Resistor                                                                      
+R22        Res3                      BottomLayer J1-0603                      74.2950mm    67.0560mm    90       Resistor                                                                      
+R21        Res3                      BottomLayer J1-0603                      67.5640mm    66.8020mm    270      Resistor                                                                      
+R20        Res3                      TopLayer    J1-0603                      72.0090mm    24.1250mm    270      Resistor                                                                      
+R19        Res3                      TopLayer    J1-0603                      63.7540mm    41.1480mm    180      Resistor                                                                      
+R18        Res3                      TopLayer    J1-0603                      74.1680mm    24.0100mm    270      Resistor                                                                      
+R17        Res3                      TopLayer    J1-0603                      55.5110mm    41.1480mm    360      Resistor                                                                      
+R16        Res3                      TopLayer    J1-0603                      70.3580mm    24.1250mm    90       Resistor                                                                      
+R15        Res3                      TopLayer    J1-0603                      55.4990mm    42.6023mm    360      Resistor                                                                      
+R14        Res3                      TopLayer    J1-0603                      72.8980mm    30.0990mm    360      Resistor                                                                      
+R13        Res3                      TopLayer    J1-0603                      63.7540mm    39.6938mm    360      Resistor                                                                      
+R11        Res3                      BottomLayer J1-0603                      62.3570mm    59.5630mm    270      Resistor                                                                      
+R5         22R                       TopLayer    J1-0603                      47.7520mm    49.9110mm    270      Resistor                                                                      
+R4         22R                       TopLayer    J1-0603                      43.9420mm    59.6900mm    270      Resistor                                                                      
+R3         22R                       TopLayer    J1-0603                      43.9420mm    62.9920mm    270      Resistor                                                                      
+R2         Res3                      BottomLayer J1-0603                      70.6120mm    46.8630mm    360      Resistor                                                                      
+R1         Res3                      BottomLayer J1-0603                      70.7390mm    48.3870mm    360      Resistor                                                                      
+Q3         QNPN                      BottomLayer SOT-23B_N                    70.7390mm    66.5480mm    270      "NPN Bipolar Transistor"                                                      
+Q2         QNPN                      TopLayer    SOT-23B_N                    46.9900mm    63.2460mm    270      "NPN Bipolar Transistor"                                                      
+Q1         PNP                       BottomLayer SOT-23B_N                    64.5183mm    66.4210mm    270      "PNP Bipolar Transistor"                                                      
+P1         "Header 2"                TopLayer    HDR1X2                       81.4070mm    38.3540mm    270      "Header, 2-Pin"                                                               
+MOSFET1    fds9431a                  TopLayer    SOIC127P600X175-8N           59.1820mm    46.9900mm    360      ""                                                                            
+Diode1     "Diod MBR0520L-TP"        TopLayer    SOD3716X135N                 64.7582mm    46.3550mm    270      ""                                                                            
+D1         Diode                     BottomLayer SMC                          55.4990mm    59.0550mm    0        "Default Diode"                                                               
+C26        "Cap Semi"                TopLayer    1608[0603]                   61.7220mm    33.6550mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C24        "Cap Semi"                TopLayer    1608[0603]                   75.9460mm    36.4490mm    270      "Capacitor (Semiconductor SIM Model)"                                         
+C22        "Cap Semi"                TopLayer    1608[0603]                   59.3090mm    24.7650mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C20        "Cap Semi"                TopLayer    1608[0603]                   59.3090mm    29.3370mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C19        "Cap Semi"                TopLayer    1608[0603]                   65.1510mm    25.4000mm    90       "Capacitor (Semiconductor SIM Model)"                                         
+C18        "Cap Semi"                TopLayer    1608[0603]                   66.6750mm    25.4000mm    90       "Capacitor (Semiconductor SIM Model)"                                         
+C16        "Cap Semi"                TopLayer    1608[0603]                   61.5950mm    35.8140mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C15        "Cap Semi"                TopLayer    1608[0603]                   59.3963mm    26.4160mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C14        "Cap Semi"                TopLayer    1608[0603]                   61.4680mm    30.8038mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C13        "Cap Semi"                TopLayer    1608[0603]                   59.3090mm    27.8703mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C11        "Cap Semi"                BottomLayer 1608[0603]                   72.8980mm    61.9760mm    90       "Capacitor (Semiconductor SIM Model)"                                         
+C10        "Cap Semi"                BottomLayer 1608[0603]                   54.2290mm    56.0070mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+C6         "Cap Semi"                TopLayer    1608[0603]                   84.5820mm    57.4040mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+C5         "Cap Semi"                TopLayer    1608[0603]                   83.9470mm    51.0540mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+C4         "Cap Semi"                BottomLayer 1608[0603]                   69.2150mm    42.6720mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+C3         "Cap Semi"                BottomLayer 1608[0603]                   68.8340mm    50.0380mm    180      "Capacitor (Semiconductor SIM Model)"                                         
+C2         "Cap Semi"                BottomLayer 1608[0603]                   77.0890mm    49.5300mm    360      "Capacitor (Semiconductor SIM Model)"                                         
+C1         "Cap Semi"                BottomLayer 1608[0603]                   74.6760mm    50.0380mm    270      "Capacitor (Semiconductor SIM Model)"                                         
+2          MCP73837T-FCI/MF          TopLayer    DFN300X300X100-11N           59.8170mm    40.7670mm    360      "MCP73837 Series 6 V Linear Battery Charge Controller Surface Mount - DFN-10" 
+1          magnometer                BottomLayer SIP-3                        35.8140mm    49.0520mm    270      ""                                                                            
+*2         "Connector button"        TopLayer    BUTTON_CONNECTOR             81.9490mm    66.0600mm    90       ""                                                                            

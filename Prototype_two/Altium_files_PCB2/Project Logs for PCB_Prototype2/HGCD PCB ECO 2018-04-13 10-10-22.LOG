@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=VCC Pin=U2-4
+Change Component Designator: OldDesignator=* NewDesignator=bq51013B
+Added Pin To Net: NetName=NetC5_2 Pin=U2-4
+Change Net Name : Old Net Name=Net*_2 New Net Name=Netbq51013B_2
+Change Net Name : Old Net Name=Net*_3 New Net Name=Netbq51013B_3
+Change Net Name : Old Net Name=Net*_4 New Net Name=Net2_1
+Change Net Name : Old Net Name=Net*_5 New Net Name=Netbq51013B_5
+Change Net Name : Old Net Name=Net*_6 New Net Name=Netbq51013B_6
+Change Net Name : Old Net Name=Net*_12 New Net Name=Netbq51013B_12
+Change Net Name : Old Net Name=Net*_13 New Net Name=Netbq51013B_13
+Change Net Name : Old Net Name=Net*_14 New Net Name=Netbq51013B_14
+Change Net Name : Old Net Name=Net*_15 New Net Name=Netbq51013B_15
+Change Net Name : Old Net Name=Net*_16 New Net Name=Netbq51013B_16
+Change Net Name : Old Net Name=Net*_17 New Net Name=Netbq51013B_17
+Change Net Name : Old Net Name=Net*_18 New Net Name=Netbq51013B_18
+Change Net Name : Old Net Name=Net*_19 New Net Name=Netbq51013B_19

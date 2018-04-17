@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=0R NewDesignator=R2
+Change Component Designator: OldDesignator=LCD 2.8 V diode NewDesignator=D4
+Change Net Name : Old Net Name=Net0R_1 New Net Name=NetR2_1
+Change Net Name : Old Net Name=Net0R_2 New Net Name=NetC2_2
+Change Net Name : Old Net Name=NetLCD 2.8 V diode_1 New Net Name=NetD4_1

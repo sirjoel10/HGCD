@@ -1,0 +1,31 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [PCB_Prototype2.PrjPCB]
+   Generated File[HGCD.GTO]
+   Generated File[HGCD.GTP]
+   Generated File[HGCD.GTS]
+   Generated File[HGCD.GTL]
+   Generated File[HGCD.GP1]
+   Generated File[HGCD.GP2]
+   Generated File[HGCD.GBL]
+   Generated File[HGCD.GBS]
+   Generated File[HGCD.GBP]
+   Generated File[HGCD.GBO]
+   Generated File[HGCD.GM1]
+   Generated File[HGCD.GM13]
+   Generated File[HGCD.GM15]
+   Generated File[HGCD.GM31]
+   Generated File[HGCD.GKO]
+   Generated File[HGCD.GPT]
+   Generated File[HGCD.GPB]
+   Generated File[HGCD.GD1]
+   Generated File[HGCD.GG1]
+   Generated File[HGCD.RUL]
+   Generated File[HGCD.EXTREP]
+   Generated File[HGCD.REP]
+
+
+Files Generated   : 22
+Documents Printed : 0
+
+Finished Output Generation At 08:55:55 On 2018-04-17
