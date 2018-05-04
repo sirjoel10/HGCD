@@ -1,0 +1,22 @@
+/*
+ * pgmspace.h
+ *
+ *  Created on: Apr 27, 2018
+ *      Author: Joel
+ */
+
+#ifndef PGMSPACE_H_
+#define PGMSPACE_H_
+
+/**
+ * Reads an object from the pgmspace to a destination
+ */
+void pgm_read_object(void *dest, const void *address, int size);
+
+/**
+ * Reads a string from the pgmspace to a destination
+ */
+void pgm_read_string(char *str, const void *address, int size);
+
+
+#endif /* PGMSPACE_H_ */

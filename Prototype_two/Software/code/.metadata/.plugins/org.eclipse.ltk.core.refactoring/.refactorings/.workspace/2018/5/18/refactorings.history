@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;stmcube/Src/pgmspace.c&apos;" deleteContents="false" description="Delete resource &apos;stmcube/Src/pgmspace.c&apos;" element1="/stmcube/Src/pgmspace.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1525337280679"/>&#x0A;<refactoring comment="Delete resource &apos;stmcube/Inc/pgmspace.h&apos;" deleteContents="false" description="Delete resource &apos;stmcube/Inc/pgmspace.h&apos;" element1="/stmcube/Inc/pgmspace.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1525337287738"/>
+</session>

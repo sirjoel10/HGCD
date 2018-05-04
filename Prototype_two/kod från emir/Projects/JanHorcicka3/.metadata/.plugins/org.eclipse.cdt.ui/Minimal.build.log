@@ -1,6 +1,0 @@
-13:32:57 **** Incremental Build of configuration Debug for project Minimal ****
-make -j4 all 
-make: Nothing to be done for 'all'.
-
-13:32:57 Build Finished (took 485ms)
-

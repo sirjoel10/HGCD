@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;stmcube/Src/ILI0163C.h&apos; to &apos;ILI9163C.h&apos;" description="Rename resource &apos;ILI0163C.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/ILI0163C.h" name="ILI9163C.h" stamp="1524558698168" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;stmcube/Src/ILI9163C&apos; to &apos;ILI9163C.c&apos;" description="Rename resource &apos;ILI9163C&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Src/ILI9163C" name="ILI9163C.c" stamp="1524558789588" updateReferences="true"/>
+</session>

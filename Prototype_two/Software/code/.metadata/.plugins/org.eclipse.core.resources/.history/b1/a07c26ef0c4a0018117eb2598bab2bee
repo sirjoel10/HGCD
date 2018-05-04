@@ -1,0 +1,366 @@
+#include "ILI9163C.h"
+#include "stm32l4xx_hal.h"
+
+extern SPI_HandleTypeDef hspi1;
+
+
+//RGB222 to RGB565
+uint16_t EToS(uint8_t Col){
+	uint16_t Temp = 0;
+
+	/* 8 bit
+	Temp |= (Col&3)<<3;
+	Temp |= ((Col>>2)&7)<<8;
+	Temp |= (Col>>5)<<13;
+	 */
+
+	Temp |= (Col&3)<<3;
+	Temp |= ((Col>>2)&3)<<9;
+	Temp |= ((Col>>4)&3)<<14;
+
+	return Temp;
+}
+
+/*void SB(uint8_t Data, uint8_t DR){
+	if(DR == Dat) GPIO_SetBits(GPIOA, AOPin);
+	else GPIO_ResetBits(GPIOA, AOPin);
+
+	SPI_SendData8(SPI1, Data);
+	while(SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_BSY) == SET);
+}
+*/
+
+
+/*TFTM018_WriteError TFTM018_Write( uint16_t data, WriteMode Dat)
+{
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+	//1. Pull the chip select pin low
+
+
+
+
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+	//2. Send data using SPI HAL blocking functions
+	while(HAL_SPI_GetState(&hspi1) != HAL_SPI_STATE_READY);    //or reset
+	if(HAL_SPI_Transmit(&hspi1, &TFTtxBuffer[0] , 2, 100)!= HAL_OK)
+	{
+		return TFT_comms_error;
+	}
+	while(HAL_SPI_GetState(&hspi1) != HAL_SPI_STATE_READY);
+	//3. Pull the chip select pin high
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
+	return TFT_comms_success;
+
+}
+*/
+
+void SB(uint8_t Data, uint8_t REG){
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET); // CS low when active
+	if(REG == Dat) HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET); // DATA
+	else HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);			//COMMAND REG
+	while(HAL_SPI_GetState(&hspi1) != HAL_SPI_STATE_READY);			// transmit via SPI
+	HAL_SPI_Transmit(&hspi1,&Data,1,100);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);		//CS not active
+}
+
+
+
+void SW(uint16_t Data, uint8_t REG){
+
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);		//CS low when active
+	if(REG == Dat) HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET);	//DATA REG
+	else HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_RESET);		//COMMAND REG
+	uint8_t DataHigh=(Data & 0xff00) >> 8;
+	uint8_t DataLow=(Data & 0xff);
+	while(HAL_SPI_GetState(&hspi1) != HAL_SPI_STATE_READY);
+	HAL_SPI_Transmit(&hspi1,&DataHigh,1,100);					//send first bits
+	while(HAL_SPI_GetState(&hspi1) != HAL_SPI_STATE_READY);
+	HAL_SPI_Transmit(&hspi1,&DataLow,1,100);					//send last bits
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);			//CS not active
+}
+
+
+void LCD_setPos(uint8_t X1, uint8_t Y1, uint8_t X2, uint8_t Y2){
+
+	/*uint8_t s1 = 0x2A;
+	uint8_t s2 = 0x00;
+	uint8_t s3 = 0x2B;
+	uint8_t s4 = 32+Y1;
+	uint8_t s5 = 32+Y2;
+	uint8_t s6 = 0x2C;
+
+	SB(&s1, Reg);
+	SB(&s2, Dat);
+	SB(&X1, Dat);
+	SB(&s2, Dat);
+	SB(&X2, Dat);
+	SB(&s3, Reg);
+	SB(&s2, Dat);
+
+	SB(&s4, Dat);
+	SB(&s2, Dat);
+	SB(&s5, Dat);
+
+	SB(&s6, Reg);
+	*/
+
+	SB(0x2A, Reg);
+	SB(0x00, Dat);
+	SB(X1, Dat);
+	SB(0x00, Dat);
+	SB(X2, Dat);
+	SB(0x2B, Reg);
+	SB(0x00, Dat);
+
+	SB(32+Y1, Dat);
+	SB(0x00, Dat);
+	SB(32+Y2, Dat);
+
+	SB(0x2C, Reg);
+
+}
+
+void SetScrn(Colours8 Colour){
+	uint16_t XCnt, YCnt;
+
+	LCD_setPos(0, 0, XPix-1, YPix-1);
+
+	for(XCnt = 0; XCnt<XPix; XCnt++){
+		for(YCnt = 0; YCnt<YPix; YCnt++){
+			SW(Colour, Dat);
+		}
+	}
+}
+
+void ClrScrn(void){
+	SetScrn(BKGCol);
+}
+
+void WritePix(uint16_t X, uint16_t Y, Colours8 Colour){
+	LCD_setPos(X, Y, X, Y);
+	//PCol(Colour);
+	SW(Colour, Dat);
+}
+
+void PCol(Colours8 Colour){
+	/*
+	switch(Colour){
+	case Black:
+		SW(0x0000, Dat);
+		break;
+	case Blue:
+		SW(0x0010, Dat);
+		break;
+	case Red:
+		SW(0x8000, Dat);
+		break;
+	case Magenta:
+		SW(0x8010, Dat);
+		break;
+	case Green:
+		SW(0x0400, Dat);
+		break;
+	case Cyan:
+		SW(0x0410, Dat);
+		break;
+	case Yellow:
+		SW(0x8400, Dat);
+		break;
+	case White:
+		SW(0x8410, Dat);
+		break;
+	}
+	*/
+}
+
+void SleepMode(uint8_t Mode){
+	if(Mode == Sleep) SB(0x10, Reg);
+	else SB(0x11, Reg);
+	Delay(120);
+}
+
+void InvMode(uint8_t Mode){
+	/*uint8_t s1 = 0x20;
+	uint8_t s2 = 0x21;
+	if(Mode==0) SB(&s1, Reg);
+	else SB(&s2, Reg);
+	*/
+	if(Mode==0) SB(0x20, Reg);
+	else SB(0x21, Reg);
+}
+
+void LCD_FULL(unsigned int i)
+{//show Box
+    unsigned int w,u;
+ LCD_SetPos(0,127,0,159);//160x128
+
+	    for(w=0;w<128;w++)
+		{
+          	SW(~i,Dat);
+
+		}
+
+  	for(w=0;w<158;w++)
+        {  	SW(~i,Dat);
+
+			for(u=0;u<126;u++)
+         	SW(i,Dat);
+
+          	SW(~i,Dat);
+		}
+
+	    for(w=0;w<128;w++)
+		{
+	    	SW(~i,Dat);
+
+		}
+
+}
+
+void LCD_FULL(unsigned int i)
+{//show Box
+    unsigned int w,u;
+ LCD_SetPos(0,127,0,159);//160x128
+
+	    for(w=0;w<128;w++)
+		{
+          	SW(~i,Dat);
+
+		}
+
+  	for(w=0;w<158;w++)
+        {  	SW(~i,Dat);
+
+			for(u=0;u<126;u++)
+         	SW(i,Dat);
+
+          	SW(~i,Dat);
+		}
+
+	    for(w=0;w<128;w++)
+		{
+	    	SW(~i,Dat);
+
+		}
+
+}
+
+
+
+ void LCD_SetPos(unsigned char x0,unsigned char x1,unsigned int y0,unsigned int y1)
+{unsigned char YSH,YSL,YEH,YEL;
+
+	YSH=y0>>8;
+	YSL=y0;
+
+	YEH=y1>>8;
+	YEL=y1;
+
+ 	SB(0x2A,Reg);
+ 	SB(0x00,Dat);
+ 	SB(x0,Dat);
+ 	SB(0x00,Dat);
+ 	SB(x1,Dat);
+ 	SB(0x2B,Reg);
+ 	SB(YSH,Dat);
+ 	SB(YSL,Dat);
+ 	SB (YEH,Dat);
+ 	SB (YEL,Dat);
+ 	SB(0x2C,Reg);//LCD_WriteCMD(GRAMWR);
+}
+
+
+
+void ILI9163Init(void){
+
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // CS low when active
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+	HAL_Delay(50);
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+	HAL_Delay(150);
+
+
+	  //************* Start Initial Sequence **********//
+		SB(0x11,Reg); //Exit Sleep
+		HAL_Delay(50);
+
+
+		SB(0x26,Reg);  //Set Default Gamma
+	    SB(0x04,Dat);
+	    SB(0xB1,Reg);
+	    SB(0x08,Dat);//10
+	    SB(0x10,Dat);//08
+	    SB(0xC0,Reg);  //Set VRH1[4:0] & VC[2:0] for VCI1 & GVDD
+	    SB(0x0C,Dat);
+	    SB(0x05,Dat);
+	    SB(0xC1,Reg);  //Set BT[2:0] for AVDD & VCL & VGH & VGL
+	    SB(0x02,Dat);
+	    SB(0xC5,Reg);  //Set VMH[6:0] & VML[6:0] for VOMH & VCOML
+	    SB(0x4E,Dat);
+	    SB(0x30,Dat);
+	    SB(0xC7,Reg);
+	    SB(0xc0,Dat);     //offset=0//C0
+	    SB(0x3A,Reg);  //Set Color Format
+	    SB(0x05,Dat);
+	    SB(0x2A,Reg);  //Set Column Address
+	    SB(0x00,Dat);
+	    SB(0x00,Dat);
+	    SB(0x00,Dat);
+	    SB(0x7F,Dat);
+	    SB(0x2B,Reg);  //Set Page Address
+	    SB(0x00,Dat);
+	    SB(0x00,Dat);
+	    SB(0x00,Dat);
+	    SB(0x9F,Dat);
+	 //   Write_Cmd(0xB4);  //frame inversion
+	//	Write_Cmd_Data(0x07);
+	    SB(0x36,Reg);  //Set Scanning Direction
+	    SB(0xC0,Dat);
+	 //   Write_Cmd(0xEC);  //Set pumping clock frequency
+	   // Write_Cmd_Data(0x0B);
+	    SB(0xF2,Reg);  //Enable Gamma bit
+	    SB(0x01,Dat);
+
+	    SB(0xE0,Reg);
+	    SB(0x3F,Dat);//p1          // xx VP63[5:0]             //       //
+	    SB(0x31,Dat);//p2          // xx VP62[5:0]             //       //
+	    SB(0x2D,Dat);//p3         // xx VP61[5:0]             //       //
+	    SB(0x2F,Dat);//p4          // xx VP59[5:0]             //       //
+	    SB(0x28,Dat);//p5          // xx VP57[5:0]             //       //
+	    SB(0x0D,Dat);//p6         // xxx VP50[4:0]  //       //
+	    SB(0x59,Dat);//p7          // x VP43[6:0]              //       //
+	    SB(0xA8,Dat);//p8          // VP36[3:0] VP27[3:0]        //       //
+	    SB(0x44,Dat);//p9          // x VP20[6:0]              //       //
+	    SB(0x18,Dat);//p10       // xxx VP13[4:0]  //       //
+	    SB(0x1F,Dat);//p11       // xx VP6[5:0]               //       //
+	    SB(0x10,Dat);//p12       // xx VP4[5:0]               //       //
+	    SB(0x07,Dat);//p13       // xx VP2[5:0]               //       //
+	    SB(0x02,Dat);//p14       // xx VP1[5:0]               //       //
+	    SB(0x00,Dat);//p15       // xx VP0[5:0]               //       //
+	    SB(0xE1,Reg);
+	    SB(0x00,Dat);//p1          // xx VN0[5:0]               //       //
+	    SB(0x0E,Dat);//p2         // xx VN1[5:0]               //       //
+	    SB(0x12,Dat);//p3          // xx VN2[5:0]               //       //
+	    SB(0x10,Dat);//p4          // xx VN4[5:0]              //       //
+	    SB(0x17,Dat);//p5          // xx VN6[5:0]               //       //
+	    SB(0x12,Dat);//p6          // xxx VN13[4:0] //       //
+	    SB(0x26,Dat);//p7          // x VN20[6:0]              //       //
+	    SB(0x57,Dat);//p8          // VN36[3:0] VN27[3:0]       //       //
+	    SB(0x3B,Dat);//p9         // x VN43[6:0]              //       //
+	    SB(0x07,Dat);//p10       // xxx VN50[4:0] //       //
+	    SB(0x20,Dat);//p11       // xx VN57[5:0]            //       //
+	    SB(0x2F,Dat);//p12       // xx VN59[5:0]            //       //
+	    SB(0x38,Dat);//p13       // xx VN61[5:0]            //       //
+	    SB(0x3D,Dat);//p14       // xx VN62[5:0]            //       //
+	    SB(0x3f,Dat);//p15         // xx VN63[5:0]            //       /
+
+
+
+	    SB(0x29,Reg); // Display On
+	    SB(0x2C,Reg);
+
+}
+
+
+
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;stmcube/Src/ILI9163C.h&apos;" deleteContents="false" description="Delete resource &apos;stmcube/Src/ILI9163C.h&apos;" element1="/stmcube/Src/ILI9163C.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1524558759263"/>
+</session>

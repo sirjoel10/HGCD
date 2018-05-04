@@ -1,7 +1,0 @@
-#ifndef __CAN_BUS_H__
-#define __CAN_BUS_H__
-
-#define HIGH_BYTEM_ASK	0xF0
-#define LOW_BYTEM_ASK	0x0F
-
-#endif
