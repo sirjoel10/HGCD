@@ -883,21 +883,6 @@ int16_t FCos(int16_t Angle){
 }
 */
 
-void drawRGBBitmapLeaveOutArea(int16_t x, int16_t y,
-  const uint16_t bitmap[], int16_t w, int16_t h, int16_t wl1, int16_t wl2,int16_t wh1,int16_t wh2) {
-    for(int16_t j=0; j<h; j++, y++) {
-        for(int16_t i=0; i<w; i++ ) {
-        	if(x+i>=wl1 && x+i<=wl2 && y>=wh1 && y<=wh2){
-        	}
-        	else{
-        	WritePix(x+i, y, bitmap[j * w + i]);
-        	//WritePixForBitmap(x+i, y, bitmap[j * w + i]);
-        	}
-        }
-    }
-}
-
-
 void drawRGBBitmap2(int16_t x, int16_t y,
   const uint16_t bitmap[], int16_t w, int16_t h) {
     for(int16_t j=0; j<h; j++, y++) {
@@ -907,5 +892,8 @@ void drawRGBBitmap2(int16_t x, int16_t y,
         }
     }
 }
+
+
+
 
 

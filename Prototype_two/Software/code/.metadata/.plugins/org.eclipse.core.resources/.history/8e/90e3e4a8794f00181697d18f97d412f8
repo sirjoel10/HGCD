@@ -268,16 +268,16 @@ int main(void)
   //TestBitmap();
   //TestGetEeprom();
   //TestProgramEeprom();
-
   //Mainprogram
   //Display through Uart
   //display_mode = 0;
   //display through text on display
   //display_mode = 1;
   //Display through bitmaps on display
-  display_mode = 2;
-  Startup();
+  //display_mode = 2;
 
+  /*Startup();
+  */
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -296,12 +296,12 @@ int main(void)
 	//TestVib();
 
 	//Mainprogram
-	ChargeStatus();
+	/*ChargeStatus();
 	if(charge_done == false || charging == false){
 		UpdateTap();
 		ChangeState();
 		GasMode();
-	}
+	}*/
 	HAL_Delay(delay);
   }
   /* USER CODE END 3 */
@@ -730,28 +730,28 @@ void Display(uint8_t disp_numb){
 		switch (disp_numb)
 		{
 			case 1:
-				drawRGBBitmapLeaveOutArea(0,-32,m21,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m21,128,160);
 				break;
 			case 2:
-				drawRGBBitmapLeaveOutArea(0,-32,m22,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m22,128,160);
 				break;
 			case 3:
-				drawRGBBitmapLeaveOutArea(0,-32,m23,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m23,128,160);
 				break;
 			case 4:
-				drawRGBBitmapLeaveOutArea(0,-32,m24,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m24,128,160);
 				break;
 			case 5:
-				drawRGBBitmapLeaveOutArea(0,-32,m25,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m25,128,160);
 				break;
 			case 6:
-				drawRGBBitmapLeaveOutArea(0,-32,m26,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m26,128,160);
 				break;
 			case 7:
-				drawRGBBitmapLeaveOutArea(0,-32,m27,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m27,128,160);
 				break;
 			case 8:
-				drawRGBBitmapLeaveOutArea(0,-32,m28,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m28,128,160);
 				break;
 			case 9:
 				drawRGBBitmap2(100,-30,m29,28,14);
@@ -811,7 +811,7 @@ void CallibrateFlex(){
 void Startup(){
 	ILI9163Init();
 	__HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1,255);
-	SetScrn(Black);
+
 	//Display "Are you awake?" window
 	Display(1);
 	//Display Battery not charging
@@ -1037,11 +1037,11 @@ void TestBitmap(){
 	ClrScrn();
 	HAL_Delay(2000);
 	//SetScrn(Green);
-	drawRGBBitmapLeaveOutArea(0,-32,m21,128,160,100,128,-30,-17);
+	drawRGBBitmapLeaveOutArea(0,-32,m21,128,160,100,128,-30,-16);
 	HAL_Delay(2000);
 	drawRGBBitmap2(100,-30,m29,28,14);
 	HAL_Delay(2000);
-	drawRGBBitmapLeaveOutArea(0,-32,m22,128,160,100,128,-30,-17);
+	drawRGBBitmapLeaveOutArea(0,-32,m22,128,160,100,128,-30,-16);
 	HAL_Delay(2000);
 	drawRGBBitmap2(100,-30,m30,28,14);
 

@@ -265,7 +265,7 @@ int main(void)
 
   //Testfunctions
   //TestDisplay();
-  //TestBitmap();
+  TestBitmap();
   //TestGetEeprom();
   //TestProgramEeprom();
 
@@ -275,9 +275,10 @@ int main(void)
   //display through text on display
   //display_mode = 1;
   //Display through bitmaps on display
-  display_mode = 2;
-  Startup();
+  //display_mode = 2;
 
+  /*Startup();
+  */
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -296,12 +297,12 @@ int main(void)
 	//TestVib();
 
 	//Mainprogram
-	ChargeStatus();
+	/*ChargeStatus();
 	if(charge_done == false || charging == false){
 		UpdateTap();
 		ChangeState();
 		GasMode();
-	}
+	}*/
 	HAL_Delay(delay);
   }
   /* USER CODE END 3 */
@@ -730,28 +731,28 @@ void Display(uint8_t disp_numb){
 		switch (disp_numb)
 		{
 			case 1:
-				drawRGBBitmapLeaveOutArea(0,-32,m21,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m21,128,160);
 				break;
 			case 2:
-				drawRGBBitmapLeaveOutArea(0,-32,m22,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m22,128,160);
 				break;
 			case 3:
-				drawRGBBitmapLeaveOutArea(0,-32,m23,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m23,128,160);
 				break;
 			case 4:
-				drawRGBBitmapLeaveOutArea(0,-32,m24,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m24,128,160);
 				break;
 			case 5:
-				drawRGBBitmapLeaveOutArea(0,-32,m25,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m25,128,160);
 				break;
 			case 6:
-				drawRGBBitmapLeaveOutArea(0,-32,m26,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m26,128,160);
 				break;
 			case 7:
-				drawRGBBitmapLeaveOutArea(0,-32,m27,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m27,128,160);
 				break;
 			case 8:
-				drawRGBBitmapLeaveOutArea(0,-32,m28,128,160,100,128,-30,-17);
+				drawRGBBitmap2(0,-32,m28,128,160);
 				break;
 			case 9:
 				drawRGBBitmap2(100,-30,m29,28,14);

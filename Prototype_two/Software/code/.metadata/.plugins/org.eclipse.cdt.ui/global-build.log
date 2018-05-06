@@ -1,55 +1,282 @@
-16:32:03 **** Incremental Build of configuration Debug for project stmcube ****
+10:01:20 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c:279:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:669:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: At top level:
+../Src/main.c:695:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:279:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:700:4: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+    drawRGBBitmap2(0,-32,m26,128,160);
+    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:713:6: error: 'display_uart' undeclared (first use in this function)
+  if (display_uart == true){
+      ^~~~~~~~~~~~
+../Src/main.c:713:6: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:717:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:730:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:785:6: error: 'display_uart' undeclared (first use in this function)
+  if (display_uart == true){
+      ^~~~~~~~~~~~
+../Src/main.c:793:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:809:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:793:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:810:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+  int temp = HallsensorValue();
+             ^~~~~~~~~~~~~~~
+../Src/main.c: In function 'ChangeState':
+../Src/main.c:857:8: error: 'display_uart' undeclared (first use in this function)
+    if (display_uart == true){
+        ^~~~~~~~~~~~
+../Src/main.c: In function 'ChargeStatus':
+../Src/main.c:972:8: error: 'display_uart' undeclared (first use in this function)
+    if (display_uart == true){
+        ^~~~~~~~~~~~
+../Src/main.c: In function 'TestFlex':
+../Src/main.c:1018:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+  itoa(test_flex, test_flex_data, 10);
+  ^~~~
+../Src/main.c: In function 'TestBitmap':
+../Src/main.c:1065:3: error: expected expression before '/' token
+  */
+   ^
+Src/subdir.mk:36: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+10:01:26 **** Incremental Build of configuration Debug for project stmcube ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:279:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:669:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+  PStr(message, &TS);
+       ^~~~~~~
+In file included from ../Src/main.c:45:0:
+C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int8_t PStr(const char*, TextParamStruct*);
+        ^~~~
+../Src/main.c: At top level:
+../Src/main.c:695:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:279:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:700:4: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+    drawRGBBitmap2(0,-32,m26,128,160);
+    ^~~~~~~~~~~~~~
+../Src/main.c: In function 'CallibrateFlex':
+../Src/main.c:713:6: error: 'display_uart' undeclared (first use in this function)
+  if (display_uart == true){
+      ^~~~~~~~~~~~
+../Src/main.c:713:6: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:717:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:730:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+    int temp = FlexsensorValue();
+               ^~~~~~~~~~~~~~~
+../Src/main.c: In function 'Startup':
+../Src/main.c:785:6: error: 'display_uart' undeclared (first use in this function)
+  if (display_uart == true){
+      ^~~~~~~~~~~~
+../Src/main.c:793:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+   CallibrateHall();
+   ^~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:809:6: warning: conflicting types for 'CallibrateHall'
+ void CallibrateHall(){
+      ^~~~~~~~~~~~~~
+../Src/main.c:793:3: note: previous implicit declaration of 'CallibrateHall' was here
+   CallibrateHall();
+   ^~~~~~~~~~~~~~
+../Src/main.c: In function 'CallibrateHall':
+../Src/main.c:810:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+  int temp = HallsensorValue();
+             ^~~~~~~~~~~~~~~
+../Src/main.c: In function 'ChangeState':
+../Src/main.c:857:8: error: 'display_uart' undeclared (first use in this function)
+    if (display_uart == true){
+        ^~~~~~~~~~~~
+../Src/main.c: In function 'ChargeStatus':
+../Src/main.c:972:8: error: 'display_uart' undeclared (first use in this function)
+    if (display_uart == true){
+        ^~~~~~~~~~~~
+../Src/main.c: In function 'TestFlex':
+../Src/main.c:1018:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+  itoa(test_flex, test_flex_data, 10);
+  ^~~~
+../Src/main.c: In function 'TestBitmap':
+../Src/main.c:1065:3: error: expected expression before '/' token
+  */
+   ^
+Src/subdir.mk:36: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+10:01:47 **** Incremental Build of configuration Debug for project stmcube ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:279:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:669:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+  PStr(message, &TS);
+       ^~~~~~~
+In file included from ../Src/main.c:45:0:
+C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int8_t PStr(const char*, TextParamStruct*);
+        ^~~~
+../Src/main.c: At top level:
+../Src/main.c:695:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:279:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:700:4: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+    drawRGBBitmap2(0,-32,m26,128,160);
+    ^~~~~~~~~~~~~~
+../Src/main.c: In function 'CallibrateFlex':
+../Src/main.c:713:6: error: 'display_uart' undeclared (first use in this function)
+  if (display_uart == true){
+      ^~~~~~~~~~~~
+../Src/main.c:713:6: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:717:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:730:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+    int temp = FlexsensorValue();
+               ^~~~~~~~~~~~~~~
+../Src/main.c: In function 'Startup':
+../Src/main.c:785:6: error: 'display_uart' undeclared (first use in this function)
+  if (display_uart == true){
+      ^~~~~~~~~~~~
+../Src/main.c:793:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+   CallibrateHall();
+   ^~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:809:6: warning: conflicting types for 'CallibrateHall'
+ void CallibrateHall(){
+      ^~~~~~~~~~~~~~
+../Src/main.c:793:3: note: previous implicit declaration of 'CallibrateHall' was here
+   CallibrateHall();
+   ^~~~~~~~~~~~~~
+../Src/main.c: In function 'CallibrateHall':
+../Src/main.c:810:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+  int temp = HallsensorValue();
+             ^~~~~~~~~~~~~~~
+../Src/main.c: In function 'ChangeState':
+../Src/main.c:857:8: error: 'display_uart' undeclared (first use in this function)
+    if (display_uart == true){
+        ^~~~~~~~~~~~
+../Src/main.c: In function 'ChargeStatus':
+../Src/main.c:972:8: error: 'display_uart' undeclared (first use in this function)
+    if (display_uart == true){
+        ^~~~~~~~~~~~
+../Src/main.c: In function 'TestFlex':
+../Src/main.c:1018:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+  itoa(test_flex, test_flex_data, 10);
+  ^~~~
+Src/subdir.mk:36: recipe for target 'Src/main.o' failed
+make: *** [Src/main.o] Error 1
+10:02:27 **** Incremental Build of configuration Debug for project stmcube ****
+make all 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+../Src/main.c: In function 'main':
+../Src/main.c:280:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:670:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+  PStr(message, &TS);
+       ^~~~~~~
+In file included from ../Src/main.c:45:0:
+C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
+ int8_t PStr(const char*, TextParamStruct*);
+        ^~~~
+../Src/main.c: At top level:
+../Src/main.c:696:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:280:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:701:4: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+    drawRGBBitmap2(0,-32,m26,128,160);
+    ^~~~~~~~~~~~~~
+../Src/main.c: In function 'CallibrateFlex':
+../Src/main.c:718:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:731:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+    int temp = FlexsensorValue();
+               ^~~~~~~~~~~~~~~
+../Src/main.c: In function 'Startup':
+../Src/main.c:794:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+   CallibrateHall();
+   ^~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:810:6: warning: conflicting types for 'CallibrateHall'
+ void CallibrateHall(){
+      ^~~~~~~~~~~~~~
+../Src/main.c:794:3: note: previous implicit declaration of 'CallibrateHall' was here
+   CallibrateHall();
+   ^~~~~~~~~~~~~~
+../Src/main.c: In function 'CallibrateHall':
+../Src/main.c:811:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1019:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
-../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1006:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(0,-32,m22,128,160);
-  ^~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -62,63 +289,63 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
-  16936	  84000	   2464	 103400	  193e8	stmcube.elf
+ 386480	   2080	   2464	 391024	  5f770	stmcube.elf
  
-16:32:15 **** Incremental Build of configuration Debug for project stmcube ****
-make all 
-make: Nothing to be done for 'all'.
-16:32:43 **** Incremental Build of configuration Debug for project stmcube ****
+10:05:10 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c:280:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:670:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: At top level:
+../Src/main.c:697:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:280:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:702:4: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+    drawRGBBitmap2(0,-32,m26,128,160);
+    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:719:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:732:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:795:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:811:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:795:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:812:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1020:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
-../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1006:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(0,-32,picture_one,128,160);
-  ^~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -131,60 +358,63 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
-  57896	  84000	   2464	 144360	  233e8	stmcube.elf
+ 386480	   2080	   2464	 391024	  5f770	stmcube.elf
  
-17:44:59 **** Incremental Build of configuration Debug for project stmcube ****
+10:06:16 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:275:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:662:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c:280:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:670:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: At top level:
+../Src/main.c:697:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:280:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:698:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+  drawRGBBitmap2(0,-32,m26,128,160);
+  ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:684:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:720:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:733:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:747:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:796:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:763:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:812:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:747:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:796:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:764:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:813:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:972:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1021:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
-../Src/main.c: At top level:
-../Src/main.c:999:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:275:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1004:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(0,-32,m21,128,160);
-  ^~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -197,60 +427,63 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
- 385776	   2080	   2464	 390320	  5f4b0	stmcube.elf
+ 386496	   2080	   2464	 391040	  5f780	stmcube.elf
  
-17:56:22 **** Incremental Build of configuration Debug for project stmcube ****
+10:06:59 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c:280:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:670:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: At top level:
+../Src/main.c:697:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:280:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:698:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+  drawRGBBitmap2(0,-32,m26,128,160);
+  ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:720:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:733:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:796:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:812:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:796:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:813:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1021:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
-../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1006:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(0,-32,m21,128,160);
-  ^~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -263,60 +496,63 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
- 385832	   3360	   2464	 391656	  5f9e8	stmcube.elf
+ 386480	   2080	   2464	 391024	  5f770	stmcube.elf
  
-17:58:12 **** Incremental Build of configuration Debug for project stmcube ****
+10:08:10 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c:280:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:670:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: At top level:
+../Src/main.c:697:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:280:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:705:4: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+    drawRGBBitmap2(0,-32,m26,128,160);
+    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:722:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:735:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:798:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:814:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:798:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:815:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1023:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
-../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1023:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(96,-30,m29,32,10);
-  ^~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -329,60 +565,63 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
- 386896	   2080	   2464	 391440	  5f910	stmcube.elf
+ 387144	   2080	   2464	 391688	  5fa08	stmcube.elf
  
-18:01:17 **** Incremental Build of configuration Debug for project stmcube ****
+10:08:53 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c:280:3: warning: implicit declaration of function 'test_case' [-Wimplicit-function-declaration]
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:670:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: At top level:
+../Src/main.c:697:6: warning: conflicting types for 'test_case'
+ void test_case(){
+      ^~~~~~~~~
+../Src/main.c:280:3: note: previous implicit declaration of 'test_case' was here
+   test_case();
+   ^~~~~~~~~
+../Src/main.c: In function 'test_case':
+../Src/main.c:705:4: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+    drawRGBBitmap2(0,-32,m26,128,160);
+    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:722:3: warning: implicit declaration of function 'Display' [-Wimplicit-function-declaration]
+   Display(m15);
+   ^~~~~~~
+../Src/main.c:735:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:798:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:814:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:798:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:815:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1023:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
-../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1023:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(114,-30,m29,20,10);
-  ^~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -395,60 +634,81 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
- 386656	   2080	   2464	 391200	  5f820	stmcube.elf
+ 387144	   2080	   2464	 391688	  5fa08	stmcube.elf
  
-18:16:32 **** Incremental Build of configuration Debug for project stmcube ****
+11:00:20 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
+Building file: ../Src/GFXC.c
+Invoking: MCU GCC Compiler
+C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/GFXC.d" -MT"Src/GFXC.o" -o "Src/GFXC.o" "../Src/GFXC.c"
+../Src/GFXC.c: In function 'LineP':
+../Src/GFXC.c:549:14: warning: unused variable 'YE' [-Wunused-variable]
+  uint8_t XE, YE;
+              ^~
+../Src/GFXC.c:549:10: warning: unused variable 'XE' [-Wunused-variable]
+  uint8_t XE, YE;
+          ^~
+../Src/GFXC.c: In function 'PNum':
+../Src/GFXC.c:355:4: warning: 'Sign' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(Sign == 1){
+    ^
+../Src/GFXC.c: In function 'PNumF':
+../Src/GFXC.c:407:3: warning: 'FracI' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   PNum(FracI, T);
+   ^~~~~~~~~~~~~~
+Finished building: ../Src/GFXC.c
+ 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:660:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: In function 'Display':
+../Src/main.c:733:5: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+     drawRGBBitmap2(0,-32,m21,128,160);
+     ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:777:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:821:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:833:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:821:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:834:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1008:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
-../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
+../Src/main.c: In function 'TestDisplay':
+../Src/main.c:1033:10: warning: passing argument 1 of 'Display' makes integer from pointer without a cast [-Wint-conversion]
+  Display(m11);
+          ^~~
+../Src/main.c:663:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void Display(uint8_t disp_numb){
+      ^~~~~~~
 ../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1023:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(108,-30,m29,20,10);
-  ^~~~~~~~~~~~~~
+../Src/main.c:1040:2: warning: implicit declaration of function 'drawRGBBitmapLeaveOutArea' [-Wimplicit-function-declaration]
+  drawRGBBitmapLeaveOutArea(0,-32,m21,128,160,100,128,-30,-16);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -461,60 +721,71 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
- 386632	   2080	   2464	 391176	  5f808	stmcube.elf
+  14920	   1880	   2464	  19264	   4b40	stmcube.elf
  
-18:20:24 **** Incremental Build of configuration Debug for project stmcube ****
+11:00:58 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
+../Src/main.c:268:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
    TestBitmap();
    ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:661:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: In function 'Display':
+../Src/main.c:734:5: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+     drawRGBBitmap2(0,-32,m21,128,160);
+     ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:778:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:822:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:834:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:822:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:835:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1009:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
+../Src/main.c: In function 'TestDisplay':
+../Src/main.c:1034:10: warning: passing argument 1 of 'Display' makes integer from pointer without a cast [-Wint-conversion]
+  Display(m11);
+          ^~~
+../Src/main.c:664:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void Display(uint8_t disp_numb){
+      ^~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
+../Src/main.c:1036:6: warning: conflicting types for 'TestBitmap'
  void TestBitmap(){
       ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
+../Src/main.c:268:3: note: previous implicit declaration of 'TestBitmap' was here
    TestBitmap();
    ^~~~~~~~~~
 ../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1023:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(108,-30,m29,20,10);
-  ^~~~~~~~~~~~~~
+../Src/main.c:1041:2: warning: implicit declaration of function 'drawRGBBitmapLeaveOutArea' [-Wimplicit-function-declaration]
+  drawRGBBitmapLeaveOutArea(0,-32,m21,128,160,100,128,-30,-16);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -527,60 +798,92 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
- 386912	   2080	   2464	 391456	  5f920	stmcube.elf
+ 346440	   1880	   2464	 350784	  55a40	stmcube.elf
  
-18:21:18 **** Incremental Build of configuration Debug for project stmcube ****
+11:05:53 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
+Building file: ../Src/GFXC.c
+Invoking: MCU GCC Compiler
+C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/GFXC.d" -MT"Src/GFXC.o" -o "Src/GFXC.o" "../Src/GFXC.c"
+../Src/GFXC.c: In function 'LineP':
+../Src/GFXC.c:549:14: warning: unused variable 'YE' [-Wunused-variable]
+  uint8_t XE, YE;
+              ^~
+../Src/GFXC.c:549:10: warning: unused variable 'XE' [-Wunused-variable]
+  uint8_t XE, YE;
+          ^~
+../Src/GFXC.c: In function 'PNum':
+../Src/GFXC.c:355:4: warning: 'Sign' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if(Sign == 1){
+    ^
+../Src/GFXC.c: In function 'PNumF':
+../Src/GFXC.c:407:3: warning: 'FracI' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   PNum(FracI, T);
+   ^~~~~~~~~~~~~~
+Finished building: ../Src/GFXC.c
+ 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
+../Src/main.c:268:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
    TestBitmap();
    ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:661:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: In function 'Display':
+../Src/main.c:734:5: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+     drawRGBBitmap2(0,-32,m21,128,160);
+     ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:778:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:822:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:834:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:822:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:835:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1009:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
+../Src/main.c: In function 'TestDisplay':
+../Src/main.c:1034:10: warning: passing argument 1 of 'Display' makes integer from pointer without a cast [-Wint-conversion]
+  Display(m11);
+          ^~~
+../Src/main.c:664:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void Display(uint8_t disp_numb){
+      ^~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
+../Src/main.c:1036:6: warning: conflicting types for 'TestBitmap'
  void TestBitmap(){
       ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
+../Src/main.c:268:3: note: previous implicit declaration of 'TestBitmap' was here
    TestBitmap();
    ^~~~~~~~~~
 ../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1023:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(102,-30,m29,20,13);
-  ^~~~~~~~~~~~~~
+../Src/main.c:1041:2: warning: implicit declaration of function 'drawRGBBitmapLeaveOutArea' [-Wimplicit-function-declaration]
+  drawRGBBitmapLeaveOutArea(0,-32,m21,128,160,100,128,-30,-17);
+  ^~~~~~~~~~~~~~~~~~~~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -593,63 +896,107 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
- 386912	   2080	   2464	 391456	  5f920	stmcube.elf
+ 346440	   1880	   2464	 350784	  55a40	stmcube.elf
  
-18:22:38 **** Incremental Build of configuration Debug for project stmcube ****
-make all 
-make: Nothing to be done for 'all'.
-07:58:52 **** Incremental Build of configuration Debug for project stmcube ****
+11:09:07 **** Incremental Build of configuration Debug for project stmcube ****
 make all 
 Building file: ../Src/main.c
 Invoking: MCU GCC Compiler
 C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
 ../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
+../Src/main.c:280:3: warning: implicit declaration of function 'Startup' [-Wimplicit-function-declaration]
+   Startup();
+   ^~~~~~~
+../Src/main.c:300:2: warning: implicit declaration of function 'ChargeStatus' [-Wimplicit-function-declaration]
+  ChargeStatus();
+  ^~~~~~~~~~~~
+../Src/main.c:302:3: warning: implicit declaration of function 'UpdateTap' [-Wimplicit-function-declaration]
+   UpdateTap();
+   ^~~~~~~~~
+../Src/main.c:303:3: warning: implicit declaration of function 'ChangeState' [-Wimplicit-function-declaration]
+   ChangeState();
+   ^~~~~~~~~~~
+../Src/main.c:304:3: warning: implicit declaration of function 'GasMode' [-Wimplicit-function-declaration]
+   GasMode();
+   ^~~~~~~
+../Src/main.c: In function 'DisplayText':
+../Src/main.c:661:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
   PStr(message, &TS);
        ^~~~~~~
 In file included from ../Src/main.c:45:0:
 C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
  int8_t PStr(const char*, TextParamStruct*);
         ^~~~
+../Src/main.c: In function 'Display':
+../Src/main.c:734:5: warning: implicit declaration of function 'drawRGBBitmapLeaveOutArea' [-Wimplicit-function-declaration]
+     drawRGBBitmapLeaveOutArea(0,-32,m21,128,160,100,128,-30,-17);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:758:5: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
+     drawRGBBitmap2(100,-30,m29,28,14);
+     ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:778:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
     int temp = FlexsensorValue();
                ^~~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:812:6: warning: conflicting types for 'Startup'
+ void Startup(){
+      ^~~~~~~
+../Src/main.c:280:3: note: previous implicit declaration of 'Startup' was here
+   Startup();
+   ^~~~~~~
 ../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
+../Src/main.c:822:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
+../Src/main.c:834:6: warning: conflicting types for 'CallibrateHall'
  void CallibrateHall(){
       ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
+../Src/main.c:822:3: note: previous implicit declaration of 'CallibrateHall' was here
    CallibrateHall();
    ^~~~~~~~~~~~~~
 ../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
+../Src/main.c:835:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
   int temp = HallsensorValue();
              ^~~~~~~~~~~~~~~
+../Src/main.c: At top level:
+../Src/main.c:856:6: warning: conflicting types for 'GasMode'
+ void GasMode(){
+      ^~~~~~~
+../Src/main.c:304:3: note: previous implicit declaration of 'GasMode' was here
+   GasMode();
+   ^~~~~~~
+../Src/main.c:878:6: warning: conflicting types for 'ChangeState'
+ void ChangeState(){
+      ^~~~~~~~~~~
+../Src/main.c:303:3: note: previous implicit declaration of 'ChangeState' was here
+   ChangeState();
+   ^~~~~~~~~~~
+../Src/main.c:910:6: warning: conflicting types for 'UpdateTap'
+ void UpdateTap(){
+      ^~~~~~~~~
+../Src/main.c:302:3: note: previous implicit declaration of 'UpdateTap' was here
+   UpdateTap();
+   ^~~~~~~~~
+../Src/main.c:964:6: warning: conflicting types for 'ChargeStatus'
+ void ChargeStatus(){
+      ^~~~~~~~~~~~
+../Src/main.c:300:2: note: previous implicit declaration of 'ChargeStatus' was here
+  ChargeStatus();
+  ^~~~~~~~~~~~
 ../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
+../Src/main.c:1009:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
   itoa(test_flex, test_flex_data, 10);
   ^~~~
-../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1023:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(100,-30,m29,28,14);
-  ^~~~~~~~~~~~~~
+../Src/main.c: In function 'TestDisplay':
+../Src/main.c:1034:10: warning: passing argument 1 of 'Display' makes integer from pointer without a cast [-Wint-conversion]
+  Display(m11);
+          ^~~
+../Src/main.c:664:6: note: expected 'uint8_t {aka unsigned char}' but argument is of type 'uint8_t * {aka unsigned char *}'
+ void Display(uint8_t disp_numb){
+      ^~~~~~~
 Finished building: ../Src/main.c
  
 Building target: stmcube.elf
@@ -662,71 +1009,5 @@ Generating binary and Printing size information:
 arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
 arm-none-eabi-size "stmcube.elf"
    text	   data	    bss	    dec	    hex	filename
- 387016	   2080	   2464	 391560	  5f988	stmcube.elf
- 
-08:00:10 **** Incremental Build of configuration Debug for project stmcube ****
-make all 
-Building file: ../Src/main.c
-Invoking: MCU GCC Compiler
-C:\Users\Joel\Desktop\HGCD\Prototype_two\Software\stmcube\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32L476xx -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Device/ST/STM32L4xx/Include" -I"C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
-../Src/main.c: In function 'main':
-../Src/main.c:277:3: warning: implicit declaration of function 'TestBitmap' [-Wimplicit-function-declaration]
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'Display':
-../Src/main.c:664:7: warning: pointer targets in passing argument 1 of 'PStr' differ in signedness [-Wpointer-sign]
-  PStr(message, &TS);
-       ^~~~~~~
-In file included from ../Src/main.c:45:0:
-C:/Users/Joel/Desktop/HGCD/Prototype_two/Software/stmcube/Inc/GFXC.h:57:8: note: expected 'const char *' but argument is of type 'uint8_t * {aka unsigned char *}'
- int8_t PStr(const char*, TextParamStruct*);
-        ^~~~
-../Src/main.c: In function 'CallibrateFlex':
-../Src/main.c:686:15: warning: implicit declaration of function 'FlexsensorValue' [-Wimplicit-function-declaration]
-    int temp = FlexsensorValue();
-               ^~~~~~~~~~~~~~~
-../Src/main.c: In function 'Startup':
-../Src/main.c:749:3: warning: implicit declaration of function 'CallibrateHall' [-Wimplicit-function-declaration]
-   CallibrateHall();
-   ^~~~~~~~~~~~~~
-../Src/main.c: At top level:
-../Src/main.c:765:6: warning: conflicting types for 'CallibrateHall'
- void CallibrateHall(){
-      ^~~~~~~~~~~~~~
-../Src/main.c:749:3: note: previous implicit declaration of 'CallibrateHall' was here
-   CallibrateHall();
-   ^~~~~~~~~~~~~~
-../Src/main.c: In function 'CallibrateHall':
-../Src/main.c:766:13: warning: implicit declaration of function 'HallsensorValue' [-Wimplicit-function-declaration]
-  int temp = HallsensorValue();
-             ^~~~~~~~~~~~~~~
-../Src/main.c: In function 'TestFlex':
-../Src/main.c:974:2: warning: implicit declaration of function 'itoa' [-Wimplicit-function-declaration]
-  itoa(test_flex, test_flex_data, 10);
-  ^~~~
-../Src/main.c: At top level:
-../Src/main.c:1001:6: warning: conflicting types for 'TestBitmap'
- void TestBitmap(){
-      ^~~~~~~~~~
-../Src/main.c:277:3: note: previous implicit declaration of 'TestBitmap' was here
-   TestBitmap();
-   ^~~~~~~~~~
-../Src/main.c: In function 'TestBitmap':
-../Src/main.c:1023:2: warning: implicit declaration of function 'drawRGBBitmap2' [-Wimplicit-function-declaration]
-  drawRGBBitmap2(0,-32,m22,128,160);
-  ^~~~~~~~~~~~~~
-Finished building: ../Src/main.c
- 
-Building target: stmcube.elf
-Invoking: MCU GCC Linker
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32L476RGTx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "stmcube.elf" @"objects.list"   -lm
-Finished building target: stmcube.elf
- 
-make --no-print-directory post-build
-Generating binary and Printing size information:
-arm-none-eabi-objcopy -O binary "stmcube.elf" "stmcube.bin"
-arm-none-eabi-size "stmcube.elf"
-   text	   data	    bss	    dec	    hex	filename
- 387048	   2080	   2464	 391592	  5f9a8	stmcube.elf
+ 350960	   1880	   2544	 355384	  56c38	stmcube.elf
  

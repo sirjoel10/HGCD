@@ -276,6 +276,7 @@ int main(void)
   //display_mode = 1;
   //Display through bitmaps on display
   display_mode = 2;
+
   Startup();
 
   /* USER CODE END 2 */
